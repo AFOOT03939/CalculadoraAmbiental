@@ -7,16 +7,15 @@ using System.Text;
 
 namespace CalculadoraAmbienta.Repositorios
 {
-    internal class RepositorioReportes
+    public class RepositorioReportes
     {
-
+        // Los repositorios utilizan Dapper, es una librería que me facilita usar código SQL en lugar de LINQ
         private DapperHandler _conexion;
 
         public RepositorioReportes(DapperHandler conexion)
         {
            _conexion = conexion;
         }
-
 
         public bool setReporte(Reporte reporte)
         {
@@ -31,6 +30,7 @@ namespace CalculadoraAmbienta.Repositorios
 
             var parameters = new
             {
+                // Inserta la fecha de hoy
                 Fecha = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
                 Papel = reporte.Papel,
                 Plastico = reporte.Plastico,
@@ -72,6 +72,9 @@ namespace CalculadoraAmbienta.Repositorios
 
             var parameters = new
             {
+                // Filtro de fecha, si es vacío se ejecuta el filtro de anio o sea like '2026%' y si no viene vacío
+                // Sería algo como Like '2026-01%', los valores de año y mes son de ejemplo.
+
                 Fecha = string.IsNullOrEmpty(mes)
                     ? $"{anio}%"
                     : $"{anio}-{mes}%"

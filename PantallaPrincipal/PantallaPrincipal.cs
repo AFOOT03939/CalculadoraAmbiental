@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using CalculadoraAmbienta.PantallaCalculadora;
 using CalculadoraAmbienta.PantallaReportes;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace CalculadoraAmbienta.PantallaPrincipal
 {
@@ -26,7 +27,7 @@ namespace CalculadoraAmbienta.PantallaPrincipal
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var calculadora = new Calculadora();
+            var calculadora = Program.Services.GetRequiredService<Calculadora>();
 
             calculadora.Show();
         }

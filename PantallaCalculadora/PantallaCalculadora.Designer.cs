@@ -39,6 +39,8 @@
             output3 = new Sunny.UI.UITextBox();
             output2 = new Sunny.UI.UITextBox();
             output1 = new Sunny.UI.UITextBox();
+            output6 = new Sunny.UI.UITextBox();
+            output7 = new Sunny.UI.UITextBox();
             SuspendLayout();
             // 
             // submitButton
@@ -64,6 +66,8 @@
             input1.ShowText = false;
             input1.Size = new Size(150, 29);
             input1.TabIndex = 10;
+            input1.Tag = "";
+            input1.Text = "0";
             input1.TextAlignment = ContentAlignment.MiddleLeft;
             input1.Watermark = "";
             // 
@@ -78,6 +82,7 @@
             input2.ShowText = false;
             input2.Size = new Size(150, 29);
             input2.TabIndex = 11;
+            input2.Text = "0";
             input2.TextAlignment = ContentAlignment.MiddleLeft;
             input2.Watermark = "";
             // 
@@ -92,6 +97,7 @@
             input3.ShowText = false;
             input3.Size = new Size(150, 29);
             input3.TabIndex = 12;
+            input3.Text = "0";
             input3.TextAlignment = ContentAlignment.MiddleLeft;
             input3.Watermark = "";
             // 
@@ -106,6 +112,7 @@
             input4.ShowText = false;
             input4.Size = new Size(150, 29);
             input4.TabIndex = 13;
+            input4.Text = "0";
             input4.TextAlignment = ContentAlignment.MiddleLeft;
             input4.Watermark = "";
             // 
@@ -120,6 +127,7 @@
             input5.ShowText = false;
             input5.Size = new Size(150, 29);
             input5.TabIndex = 14;
+            input5.Text = "0";
             input5.TextAlignment = ContentAlignment.MiddleLeft;
             input5.Watermark = "";
             // 
@@ -193,11 +201,43 @@
             output1.TextAlignment = ContentAlignment.MiddleLeft;
             output1.Watermark = "";
             // 
+            // output6
+            // 
+            output6.Font = new Font("Microsoft Sans Serif", 12F);
+            output6.Location = new Point(489, 268);
+            output6.Margin = new Padding(4, 5, 4, 5);
+            output6.MinimumSize = new Size(1, 16);
+            output6.Name = "output6";
+            output6.Padding = new Padding(5);
+            output6.ShowText = false;
+            output6.Size = new Size(150, 29);
+            output6.TabIndex = 20;
+            output6.TextAlignment = ContentAlignment.MiddleLeft;
+            output6.Watermark = "";
+            output6.TextChanged += output6_TextChanged;
+            // 
+            // output7
+            // 
+            output7.Font = new Font("Microsoft Sans Serif", 12F);
+            output7.Location = new Point(489, 307);
+            output7.Margin = new Padding(4, 5, 4, 5);
+            output7.MinimumSize = new Size(1, 16);
+            output7.Name = "output7";
+            output7.Padding = new Padding(5);
+            output7.ShowText = false;
+            output7.Size = new Size(150, 29);
+            output7.TabIndex = 21;
+            output7.TextAlignment = ContentAlignment.MiddleLeft;
+            output7.Watermark = "";
+            output7.TextChanged += output7_TextChanged;
+            // 
             // Calculadora
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(output7);
+            Controls.Add(output6);
             Controls.Add(output5);
             Controls.Add(input5);
             Controls.Add(output4);
@@ -226,5 +266,7 @@
         private Sunny.UI.UITextBox output3;
         private Sunny.UI.UITextBox output2;
         private Sunny.UI.UITextBox output1;
+        private Sunny.UI.UITextBox output6;
+        private Sunny.UI.UITextBox output7;
     }
 }

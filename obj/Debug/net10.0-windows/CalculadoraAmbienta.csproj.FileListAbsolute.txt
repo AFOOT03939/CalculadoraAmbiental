@@ -48,3 +48,6 @@ E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Debug\ne
 E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Debug\net10.0-windows\SunnyUI.Common.dll
 E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\obj\Debug\net10.0-windows\CalculadoraAmbienta.PantallaCalculadora.Calculadora.resources
 E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\obj\Debug\net10.0-windows\CalculadoraAmbienta.PantallaReportes.Reportes.resources
+E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\obj\Debug\net10.0-windows\CalculadoraAmbienta.sourcelink.json
+E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.dll
+E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll

@@ -1,4 +1,6 @@
-﻿using Sunny.UI;
+﻿using CalculadoraAmbienta.Modelos;
+using CalculadoraAmbienta.PantallaReportes;
+using Sunny.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,9 +13,12 @@ namespace CalculadoraAmbienta.PantallaCalculadora
 {
     public partial class Calculadora : Form
     {
-        public Calculadora()
+        private readonly PantallaCalculadoraService _service;
+
+        public Calculadora(PantallaCalculadoraService service)
         {
             InitializeComponent();
+            _service = service;
         }
 
         //son los inputs
@@ -52,14 +57,48 @@ namespace CalculadoraAmbienta.PantallaCalculadora
             string vidrio = input4.Text;
             string electronicos = input5.Text;
 
+            // se crea el objeto Reporte para enviarlo al servicio para calcular los outputs
+            var objetoInputs = new Reporte
+            {
+                Papel = double.Parse(papel),
+                Plastico = double.Parse(plastico),
+                Aluminio = double.Parse(aluminio),
+                Vidrio = double.Parse(vidrio),
+                Electronica = double.Parse(electronicos)
+            };
 
-            output1.Text = papel;
-            output2.Text = plastico;
-            output3.Text = aluminio;
-            output4.Text = vidrio;
-            output5.Text = electronicos;
+            Resultados resultado = PantallaCalculadoraService.calculadora(objetoInputs);
+
+            var resultadoQuery = _service.setReporte(objetoInputs);
+
+            if (resultadoQuery)
+            {
+                MessageBox.Show("Reporte guardado con éxito");
+
+                // Aquí se muestran los resultados en los outputs del forms
+                output1.Text = resultado.Arboles.ToString();
+                output2.Text = resultado.Agua.ToString();
+                output3.Text = resultado.Energia.ToString();
+                output4.Text = resultado.RellenoSanitario.ToString();
+                output5.Text = resultado.CO2.ToString();
+                output6.Text = resultado.Petroleo.ToString();
+                output7.Text = resultado.Bauxita.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Error al guardar el reporte");
+            }
 
         }
 
+        private void output6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void output7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
