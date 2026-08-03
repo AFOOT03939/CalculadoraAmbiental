@@ -41,17 +41,18 @@
             output1 = new Sunny.UI.UITextBox();
             output6 = new Sunny.UI.UITextBox();
             output7 = new Sunny.UI.UITextBox();
+            calculateButton = new Sunny.UI.UIButton();
             SuspendLayout();
             // 
             // submitButton
             // 
             submitButton.Font = new Font("Microsoft Sans Serif", 12F);
-            submitButton.Location = new Point(157, 316);
+            submitButton.Location = new Point(156, 362);
             submitButton.MinimumSize = new Size(1, 1);
             submitButton.Name = "submitButton";
             submitButton.Size = new Size(100, 35);
             submitButton.TabIndex = 5;
-            submitButton.Text = "Submit";
+            submitButton.Text = "Calcular";
             submitButton.TipsFont = new Font("Microsoft Sans Serif", 9F);
             submitButton.Click += uiButton1_Click;
             // 
@@ -231,11 +232,24 @@
             output7.Watermark = "";
             output7.TextChanged += output7_TextChanged;
             // 
+            // calculateButton
+            // 
+            calculateButton.Font = new Font("Microsoft Sans Serif", 12F);
+            calculateButton.Location = new Point(514, 362);
+            calculateButton.MinimumSize = new Size(1, 1);
+            calculateButton.Name = "calculateButton";
+            calculateButton.Size = new Size(100, 35);
+            calculateButton.TabIndex = 22;
+            calculateButton.Text = "Guardar";
+            calculateButton.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            calculateButton.Click += uiButton1_Click_1;
+            // 
             // Calculadora
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(calculateButton);
             Controls.Add(output7);
             Controls.Add(output6);
             Controls.Add(output5);
@@ -268,5 +282,6 @@
         private Sunny.UI.UITextBox output1;
         private Sunny.UI.UITextBox output6;
         private Sunny.UI.UITextBox output7;
+        private Sunny.UI.UIButton calculateButton;
     }
 }

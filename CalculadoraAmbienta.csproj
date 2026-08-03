@@ -9,7 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CheckComboBox" Version="1.1.1" />
     <PackageReference Include="Dapper" Version="2.1.79" />
+    <PackageReference Include="DataJuggler.Blazor.Components" Version="10.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.10" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.10" />
     <PackageReference Include="SunnyUI" Version="3.9.7" />

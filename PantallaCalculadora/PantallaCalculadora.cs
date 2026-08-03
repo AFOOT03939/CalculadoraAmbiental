@@ -1,5 +1,6 @@
 ﻿using CalculadoraAmbienta.Modelos;
 using CalculadoraAmbienta.PantallaReportes;
+using CalculadoraAmbienta.Servicios;
 using Sunny.UI;
 using System;
 using System.Collections.Generic;
@@ -13,9 +14,9 @@ namespace CalculadoraAmbienta.PantallaCalculadora
 {
     public partial class Calculadora : Form
     {
-        private readonly PantallaCalculadoraService _service;
+        private readonly PantallaService _service;
 
-        public Calculadora(PantallaCalculadoraService service)
+        public Calculadora(PantallaService service)
         {
             InitializeComponent();
             _service = service;
@@ -67,28 +68,16 @@ namespace CalculadoraAmbienta.PantallaCalculadora
                 Electronica = double.Parse(electronicos)
             };
 
-            Resultados resultado = PantallaCalculadoraService.calculadora(objetoInputs);
+            Resultados resultado = PantallaService.calculadora(objetoInputs);
 
-            var resultadoQuery = _service.setReporte(objetoInputs);
-
-            if (resultadoQuery)
-            {
-                MessageBox.Show("Reporte guardado con éxito");
-
-                // Aquí se muestran los resultados en los outputs del forms
-                output1.Text = resultado.Arboles.ToString();
-                output2.Text = resultado.Agua.ToString();
-                output3.Text = resultado.Energia.ToString();
-                output4.Text = resultado.RellenoSanitario.ToString();
-                output5.Text = resultado.CO2.ToString();
-                output6.Text = resultado.Petroleo.ToString();
-                output7.Text = resultado.Bauxita.ToString();
-            }
-            else
-            {
-                MessageBox.Show("Error al guardar el reporte");
-            }
-
+            // Aquí se muestran los resultados en los outputs del forms
+            output1.Text = resultado.Arboles.ToString();
+            output2.Text = resultado.Agua.ToString();
+            output3.Text = resultado.Energia.ToString();
+            output4.Text = resultado.RellenoSanitario.ToString();
+            output5.Text = resultado.CO2.ToString();
+            output6.Text = resultado.Petroleo.ToString();
+            output7.Text = resultado.Bauxita.ToString();
         }
 
         private void output6_TextChanged(object sender, EventArgs e)
@@ -98,6 +87,37 @@ namespace CalculadoraAmbienta.PantallaCalculadora
 
         private void output7_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void uiButton1_Click_1(object sender, EventArgs e)
+        {
+            string papel = output1.Text;
+            string plastico = output2.Text;
+            string aluminio = output3.Text;
+            string vidrio = output4.Text;
+            string electronicos = output5.Text;
+
+            // se crea el objeto Reporte para enviarlo al servicio para calcular los outputs
+            var objetoInputs = new Reporte
+            {
+                Papel = double.Parse(papel),
+                Plastico = double.Parse(plastico),
+                Aluminio = double.Parse(aluminio),
+                Vidrio = double.Parse(vidrio),
+                Electronica = double.Parse(electronicos)
+            };
+
+            var resultadoQuery = _service.setReporte(objetoInputs);
+
+            if (resultadoQuery)
+            {
+                MessageBox.Show("Reporte guardado con éxito");
+            }
+            else
+            {
+                MessageBox.Show("Error al guardar el reporte");
+            }
 
         }
     }

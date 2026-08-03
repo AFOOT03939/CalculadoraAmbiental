@@ -2,6 +2,7 @@ using CalculadoraAmbienta.Handlers;
 using CalculadoraAmbienta.PantallaCalculadora;
 using CalculadoraAmbienta.PantallaReportes;
 using CalculadoraAmbienta.Repositorios;
+using CalculadoraAmbienta.Servicios;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CalculadoraAmbienta
@@ -24,7 +25,7 @@ namespace CalculadoraAmbienta
 
             services.AddScoped<DapperHandler>();
             services.AddScoped<RepositorioReportes>();
-            services.AddScoped<PantallaCalculadoraService>();
+            services.AddScoped<PantallaService>();
             services.AddScoped<CalculadoraAmbienta.PantallaPrincipal.PantallaPrincipal>();
             services.AddScoped<Reportes>();
             services.AddScoped<Calculadora>();

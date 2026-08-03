@@ -6,6 +6,7 @@ namespace CalculadoraAmbienta.Modelos
 {
     public class Reporte
     {
+        public int Id_Reporte { get; set; }
         public string? Fecha { get; set; }
         public double Papel { get; set; }
         public double Plastico { get; set; }

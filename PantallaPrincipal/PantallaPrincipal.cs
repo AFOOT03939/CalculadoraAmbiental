@@ -34,7 +34,7 @@ namespace CalculadoraAmbienta.PantallaPrincipal
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var reportes = new Reportes();
+            var reportes = Program.Services.GetRequiredService<Reportes>();
 
             reportes.Show();
         }

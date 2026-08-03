@@ -1,5 +1,6 @@
 ﻿using CalculadoraAmbienta.Handlers;
 using CalculadoraAmbienta.Modelos;
+using CalculadoraAmbienta.PantallaReportes;
 using Dapper;
 using System;
 using System.Collections.Generic;
@@ -53,34 +54,65 @@ namespace CalculadoraAmbienta.Repositorios
         }
 
 
-        public IEnumerable<Reporte> getReporte(string anio, string? mes)
+        public IEnumerable<Reporte> getReporte(List<string>? anios, List<string>? meses)
         {
-
             using var conexion = _conexion.CreateConnection();
 
+            //Lista que contiene las condiciones
+            var where = new List<string>();
+
+            //si los parametros vienen con datos, se agregaran estos strings al where
+            if (anios != null && anios.Any())
+            {
+                where.Add("substr(FECHA, 1, 4) IN @Anios");
+            }
+
+            if (meses != null && meses.Any())
+            {
+                where.Add("substr(FECHA, 6, 2) IN @Meses");
+            }
+
             var sql = @"
-                SELECT 
+                SELECT
+                    ID_REPORTE,
                     FECHA,
                     PAPEL,
                     PLASTICO,
                     ALUMINIO,
                     VIDRIO,
                     ELECTRONICA
-                FROM Reportes
-                WHERE FECHA LIKE @Fecha
-            ";
+                FROM Reportes";
 
+            if (where.Any())
+            {
+                //Esto construye los filtros del query
+                //es un WHERE y si la lista where tiene mas de un elemento, se agrega un AND en medio
+                //WHERE 1=1 AND 2=2 y así
+                sql += " WHERE " + string.Join(" AND ", where);
+            }
+
+            //Estos son los parametros que se pasan a los strings de los filtros
             var parameters = new
             {
-                // Filtro de fecha, si es vacío se ejecuta el filtro de anio o sea like '2026%' y si no viene vacío
-                // Sería algo como Like '2026-01%', los valores de año y mes son de ejemplo.
-
-                Fecha = string.IsNullOrEmpty(mes)
-                    ? $"{anio}%"
-                    : $"{anio}-{mes}%"
+                Anios = anios,
+                Meses = meses
             };
 
-            var reportes = conexion.Query<Reporte>(sql, parameters);
+            return conexion.Query<Reporte>(sql, parameters);
+        }
+
+        public IEnumerable<string> getAnios()
+        {
+
+            using var conexion = _conexion.CreateConnection();
+
+            var sql = @"
+                SELECT 
+                    SUBSTRING(FECHA, 1, 4)
+                FROM Reportes
+            ";
+
+            var reportes = conexion.Query<string>(sql);
 
             return reportes;
 
