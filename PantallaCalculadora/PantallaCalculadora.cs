@@ -92,11 +92,11 @@ namespace CalculadoraAmbienta.PantallaCalculadora
 
         private void uiButton1_Click_1(object sender, EventArgs e)
         {
-            string papel = output1.Text;
-            string plastico = output2.Text;
-            string aluminio = output3.Text;
-            string vidrio = output4.Text;
-            string electronicos = output5.Text;
+            string papel = input1.Text;
+            string plastico = input2.Text;
+            string aluminio = input3.Text;
+            string vidrio = input4.Text;
+            string electronicos = input5.Text;
 
             // se crea el objeto Reporte para enviarlo al servicio para calcular los outputs
             var objetoInputs = new Reporte

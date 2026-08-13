@@ -26,14 +26,16 @@ namespace CalculadoraAmbienta
             services.AddScoped<DapperHandler>();
             services.AddScoped<RepositorioReportes>();
             services.AddScoped<PantallaService>();
-            services.AddScoped<CalculadoraAmbienta.PantallaPrincipal.PantallaPrincipal>();
-            services.AddScoped<Reportes>();
-            services.AddScoped<Calculadora>();
+            services.AddScoped<ExcelService>();
+
+            services.AddTransient<PantallaPrincipal.PantallaPrincipal>();
+            services.AddTransient<Calculadora>();
+            services.AddTransient<Reportes>();
 
             Services = services.BuildServiceProvider();
 
-            var provider = services.BuildServiceProvider();
-            Application.Run(new CalculadoraAmbienta.PantallaPrincipal.PantallaPrincipal());
+            Application.Run(
+                Services.GetRequiredService<PantallaPrincipal.PantallaPrincipal>());
         }
     }
 }

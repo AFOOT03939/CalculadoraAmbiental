@@ -14,11 +14,13 @@ namespace CalculadoraAmbienta.PantallaReportes
     public partial class Reportes : Form
     {
         private readonly PantallaService _service;
+        private readonly ExcelService _excelService;
 
-        public Reportes(PantallaService service)
+        public Reportes(PantallaService service, ExcelService excelService)
         {
             InitializeComponent();
             _service = service;
+            _excelService = excelService;
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
@@ -68,9 +70,36 @@ namespace CalculadoraAmbienta.PantallaReportes
         {
             uiDataGridView1.ClearRows();
 
+            var reporteCompleto = obtenerReporteCompleto();
+
+            crearRowsEnTablas(reporteCompleto);
+
+        }
+
+        private void downloadExcel_Click(object sender, EventArgs e)
+        {
+            var reporteCompleto = obtenerReporteCompleto();
+
+            var archivo = _excelService.crearReporteExcelPrincipal(reporteCompleto);
+
+            using var dialog = new SaveFileDialog
+            {
+                Filter = "Archivo Excel (*.xlsx)|*.xlsx",
+                FileName = "Reportes.xlsx",
+                Title = "Guardar reporte"
+            };
+
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                File.WriteAllBytes(dialog.FileName, archivo);
+            }
+        }
+
+        public List<ReporteTablas> obtenerReporteCompleto()
+        {
             List<string> anios = new List<string>();
             List<string> meses = new List<string>();
-            List<ReporteTablas> listaReportesTabla = new List<ReporteTablas>();
+            List<ReporteTablas> listaReporteTabla = new List<ReporteTablas>();
 
             //año
             foreach (string anio in uiCheckBoxGroup1.SelectedItems)
@@ -121,11 +150,9 @@ namespace CalculadoraAmbienta.PantallaReportes
                     Bauxita = resultado.Bauxita
                 };
 
-                listaReportesTabla.Add(reporteTabla);
+                listaReporteTabla.Add(reporteTabla);
             }
-
-            crearRowsEnTablas(listaReportesTabla);
-
+            return listaReporteTabla;
         }
 
         private List<Resultados> calcularReportesTabla(List<Reporte> reportes)
@@ -144,7 +171,7 @@ namespace CalculadoraAmbienta.PantallaReportes
 
         private void crearRowsEnTablas(List<ReporteTablas> listaReportesTabla)
         {
-            foreach(var listaReporte in listaReportesTabla)
+            foreach (var listaReporte in listaReportesTabla)
             {
                 uiDataGridView1.AddRow(
                      listaReporte.IdReporte,
@@ -218,5 +245,6 @@ namespace CalculadoraAmbienta.PantallaReportes
         {
 
         }
+
     }
 }

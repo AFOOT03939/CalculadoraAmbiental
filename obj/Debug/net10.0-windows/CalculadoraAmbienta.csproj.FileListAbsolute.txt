@@ -143,3 +143,10 @@ E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Debug\ne
 E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Debug\net10.0-windows\runtimes\win-x64\native\libSkiaSharp.pdb
 E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Debug\net10.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
 E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Debug\net10.0-windows\runtimes\win-x86\native\libSkiaSharp.pdb
+E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Debug\net10.0-windows\ClosedXML.dll
+E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Debug\net10.0-windows\ClosedXML.Parser.dll
+E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Debug\net10.0-windows\DocumentFormat.OpenXml.dll
+E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Debug\net10.0-windows\DocumentFormat.OpenXml.Framework.dll
+E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Debug\net10.0-windows\ExcelNumberFormat.dll
+E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Debug\net10.0-windows\RBush.dll
+E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Debug\net10.0-windows\SixLabors.Fonts.dll
