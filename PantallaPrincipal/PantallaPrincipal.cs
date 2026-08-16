@@ -43,5 +43,59 @@ namespace CalculadoraAmbienta.PantallaPrincipal
         {
 
         }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiButton2_Click(object sender, EventArgs e)
+        {
+            var reportes = Program.Services.GetRequiredService<Reportes>();
+
+            reportes.Show();
+        }
+
+        private void uiButton1_Click(object sender, EventArgs e)
+        {
+            var calculadora = Program.Services.GetRequiredService<Calculadora>();
+
+            calculadora.Show();
+        }
+
+        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
