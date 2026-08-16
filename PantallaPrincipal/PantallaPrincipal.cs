@@ -16,6 +16,7 @@ namespace CalculadoraAmbienta.PantallaPrincipal
         public PantallaPrincipal()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void label1_Click(object sender, EventArgs e)

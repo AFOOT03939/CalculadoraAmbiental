@@ -20,6 +20,7 @@ namespace CalculadoraAmbienta.PantallaCalculadora
         {
             InitializeComponent();
             _service = service;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         //son los inputs
@@ -74,9 +75,9 @@ namespace CalculadoraAmbienta.PantallaCalculadora
             output1.Text = resultado.Arboles.ToString();
             output2.Text = resultado.Agua.ToString();
             output3.Text = resultado.Energia.ToString();
-            output4.Text = resultado.RellenoSanitario.ToString();
-            output5.Text = resultado.CO2.ToString();
-            output6.Text = resultado.Petroleo.ToString();
+            output4.Text = resultado.CO2.ToString();
+            output5.Text = resultado.Petroleo.ToString();
+            output6.Text = resultado.RellenoSanitario.ToString();
             output7.Text = resultado.Bauxita.ToString();
         }
 
@@ -118,6 +119,58 @@ namespace CalculadoraAmbienta.PantallaCalculadora
             {
                 MessageBox.Show("Error al guardar el reporte");
             }
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void output2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel25_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void uiButton1_Click_2(object sender, EventArgs e)
+        {
+            input1.Text = "0";
+            input2.Text = "0";
+            input3.Text = "0";
+            input4.Text = "0";
+            input5.Text = "0";
+
+            output1.Text = "";
+            output2.Text = "";
+            output3.Text = "";
+            output4.Text = "";
+            output5.Text = "";
+            output6.Text = "";
+            output7.Text = "";
+        }
+
+        private void tableLayoutPanel20_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void output1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
 
         }
     }
