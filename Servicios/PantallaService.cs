@@ -111,7 +111,7 @@ namespace CalculadoraAmbienta.Servicios
             return resultado;
         }
 
-        public static List<string> traducirMeses(List<string> meses)
+        public static List<string> traducirMesesANumeros(List<string> meses)
         {
             List<string> mesesTraducidos = new List<string>();
 
@@ -165,6 +165,67 @@ namespace CalculadoraAmbienta.Servicios
 
                     case "Diciembre":
                         mesesTraducidos.Add("12");
+                        break;
+                }
+            }
+
+            return mesesTraducidos;
+        }
+
+        public static List<string> traducirNumerosAMeses(List<string> meses)
+        {
+            List<string> mesesTraducidos = new List<string>();
+
+            foreach (var mes in meses)
+            {
+                switch (mes)
+                {
+                    case "01":
+                        mesesTraducidos.Add("Enero");
+                        break;
+
+                    case "02":
+                        mesesTraducidos.Add("Febrero");
+                        break;
+
+                    case "03":
+                        mesesTraducidos.Add("Marzo");
+                        break;
+
+                    case "04":
+                        mesesTraducidos.Add("Abril");
+                        break;
+
+                    case "05":
+                        mesesTraducidos.Add("Mayo");
+                        break;
+
+                    case "06":
+                        mesesTraducidos.Add("Junio");
+                        break;
+
+                    case "07":
+                        mesesTraducidos.Add("Julio");
+                        break;
+
+                    case "08":
+                        mesesTraducidos.Add("Agosto");
+                        break;
+
+                    case "09":
+                        mesesTraducidos.Add("Septiembre");
+                        break;
+
+                    case "10":
+                        mesesTraducidos.Add("Octubre");
+                        break;
+
+                    case "11":
+                        mesesTraducidos.Add("Noviembre");
+                        break;
+
+                    case "12":
+                        mesesTraducidos.Add("Diciembre");
                         break;
                 }
             }

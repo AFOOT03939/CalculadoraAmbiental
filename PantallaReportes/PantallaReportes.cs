@@ -50,6 +50,7 @@ namespace CalculadoraAmbienta.PantallaReportes
         {
             uiDataGridView1.AddColumn("Id", "id", 50);
             uiDataGridView1.AddColumn("Año", "anio", 55);
+            uiDataGridView1.AddColumn("Mes", "mes", 55);
 
             uiDataGridView1.AddColumn("Papel", "papel", 70);
             uiDataGridView1.AddColumn("Plástico", "plastico", 75);
@@ -117,7 +118,7 @@ namespace CalculadoraAmbienta.PantallaReportes
             //Enero, Febrero, Marzo...
             //Este método los transforma a numeros como vienen en sql
             //01, 02, 03...
-            var mesesTraducidos = PantallaService.traducirMeses(meses);
+            var mesesTraducidos = PantallaService.traducirMesesANumeros(meses);
 
             var reportes = _service.getReportes(anios, mesesTraducidos).ToList();
 
@@ -131,11 +132,20 @@ namespace CalculadoraAmbienta.PantallaReportes
             {
                 var reporte = reportes[i];
                 var resultado = reportesCalculados[i];
+                //saca el numero del mes de la fecha de BD
+                var mesDeFecha = reportes[i].Fecha?.Substring(5, 2);
+                List<string> listaMes = new List<string>();
+                // crea la lista del mes ( el método solo admite lista así que por eso se conviierte jeje)
+                listaMes.Add(mesDeFecha);
+                // obtienes el mes convertido a string (Enero, febrero...)
+                var mes = PantallaService.traducirNumerosAMeses(listaMes);
+                Console.WriteLine(mes);
 
                 var reporteTabla = new ReporteTablas
                 {
                     IdReporte = reporte.Id_Reporte,
                     Anio = reporte.Fecha?.Substring(0, 4),
+                    Mes = mes[0],
                     Papel = reporte.Papel,
                     Plastico = reporte.Plastico,
                     Aluminio = reporte.Aluminio,
@@ -176,6 +186,7 @@ namespace CalculadoraAmbienta.PantallaReportes
                 uiDataGridView1.AddRow(
                      listaReporte.IdReporte,
                      listaReporte.Anio,
+                     listaReporte.Mes,
                      listaReporte.Papel,
                      listaReporte.Plastico,
                      listaReporte.Aluminio,
