@@ -97,8 +97,6 @@
             label2 = new Label();
             tableLayoutPanel3 = new TableLayoutPanel();
             tableLayoutPanel27 = new TableLayoutPanel();
-            uiTextBox1 = new Sunny.UI.UITextBox();
-            uiLabel24 = new Sunny.UI.UILabel();
             tableLayoutPanel26 = new TableLayoutPanel();
             pictureBox12 = new PictureBox();
             tableLayoutPanel25 = new TableLayoutPanel();
@@ -125,6 +123,7 @@
             pictureBox10 = new PictureBox();
             tableLayoutPanel19 = new TableLayoutPanel();
             pictureBox11 = new PictureBox();
+            uiLabel24 = new Sunny.UI.UILabel();
             uiLabel1 = new Sunny.UI.UILabel();
             uiLabel11 = new Sunny.UI.UILabel();
             uiLabel12 = new Sunny.UI.UILabel();
@@ -163,7 +162,6 @@
             panel5.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
             tableLayoutPanel27.SuspendLayout();
-            uiTextBox1.SuspendLayout();
             tableLayoutPanel26.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             tableLayoutPanel25.SuspendLayout();
@@ -1151,7 +1149,7 @@
             tableLayoutPanel27.ColumnCount = 2;
             tableLayoutPanel27.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 67.21311F));
             tableLayoutPanel27.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 32.7868843F));
-            tableLayoutPanel27.Controls.Add(uiTextBox1, 0, 0);
+            tableLayoutPanel27.Controls.Add(uiLabel24, 1, 0);
             tableLayoutPanel27.Controls.Add(output7, 0, 0);
             tableLayoutPanel27.Dock = DockStyle.Fill;
             tableLayoutPanel27.Location = new Point(253, 303);
@@ -1161,34 +1159,6 @@
             tableLayoutPanel27.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel27.Size = new Size(244, 44);
             tableLayoutPanel27.TabIndex = 36;
-            // 
-            // uiTextBox1
-            // 
-            uiTextBox1.Anchor = AnchorStyles.Left;
-            uiTextBox1.Controls.Add(uiLabel24);
-            uiTextBox1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox1.Location = new Point(168, 7);
-            uiTextBox1.Margin = new Padding(4, 5, 4, 5);
-            uiTextBox1.MinimumSize = new Size(1, 16);
-            uiTextBox1.Name = "uiTextBox1";
-            uiTextBox1.Padding = new Padding(5);
-            uiTextBox1.RectColor = Color.White;
-            uiTextBox1.ShowText = false;
-            uiTextBox1.Size = new Size(72, 29);
-            uiTextBox1.TabIndex = 20;
-            uiTextBox1.TextAlignment = ContentAlignment.MiddleLeft;
-            uiTextBox1.Watermark = "";
-            // 
-            // uiLabel24
-            // 
-            uiLabel24.Anchor = AnchorStyles.Left;
-            uiLabel24.Font = new Font("Microsoft Sans Serif", 10F);
-            uiLabel24.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel24.Location = new Point(2, 6);
-            uiLabel24.Name = "uiLabel24";
-            uiLabel24.Size = new Size(74, 26);
-            uiLabel24.TabIndex = 21;
-            uiLabel24.Text = "kg";
             // 
             // tableLayoutPanel26
             // 
@@ -1544,6 +1514,17 @@
             pictureBox11.TabIndex = 19;
             pictureBox11.TabStop = false;
             // 
+            // uiLabel24
+            // 
+            uiLabel24.Anchor = AnchorStyles.Left;
+            uiLabel24.Font = new Font("Microsoft Sans Serif", 10F);
+            uiLabel24.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel24.Location = new Point(167, 9);
+            uiLabel24.Name = "uiLabel24";
+            uiLabel24.Size = new Size(74, 26);
+            uiLabel24.TabIndex = 22;
+            uiLabel24.Text = "kg";
+            // 
             // Calculadora
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1588,7 +1569,6 @@
             panel5.PerformLayout();
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel27.ResumeLayout(false);
-            uiTextBox1.ResumeLayout(false);
             tableLayoutPanel26.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             tableLayoutPanel25.ResumeLayout(false);
@@ -1683,8 +1663,6 @@
         private TableLayoutPanel tableLayoutPanel19;
         private PictureBox pictureBox11;
         private TableLayoutPanel tableLayoutPanel27;
-        private Sunny.UI.UILabel uiLabel24;
-        private Sunny.UI.UITextBox uiTextBox1;
         private TableLayoutPanel tableLayoutPanel26;
         private PictureBox pictureBox12;
         private TableLayoutPanel tableLayoutPanel28;
@@ -1701,5 +1679,6 @@
         private Sunny.UI.UIButton uiButton1;
         private Label label1;
         private Label label2;
+        private Sunny.UI.UILabel uiLabel24;
     }
 }

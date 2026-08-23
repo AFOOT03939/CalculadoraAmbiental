@@ -21,6 +21,7 @@ namespace CalculadoraAmbienta.PantallaReportes
             InitializeComponent();
             _service = service;
             _excelService = excelService;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
@@ -65,6 +66,12 @@ namespace CalculadoraAmbienta.PantallaReportes
             uiDataGridView1.AddColumn("CO₂", "co2", 60);
             uiDataGridView1.AddColumn("Petróleo", "petroleo", 75);
             uiDataGridView1.AddColumn("Bauxita", "bauxita", 70);
+
+            uiDataGridView1.EnableHeadersVisualStyles = false;
+
+            uiDataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(57, 131, 48);
+
+            uiDataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
 
         private void Submit_Click(object sender, EventArgs e)
@@ -201,6 +208,8 @@ namespace CalculadoraAmbienta.PantallaReportes
                      listaReporte.Bauxita
                  );
             }
+            uiDataGridView1.DefaultCellStyle.SelectionBackColor = Color.White;
+            uiDataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
         }
 
         private void crearListadoCheckBoxesAnio()
@@ -257,5 +266,9 @@ namespace CalculadoraAmbienta.PantallaReportes
 
         }
 
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
