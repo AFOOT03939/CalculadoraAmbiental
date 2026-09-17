@@ -67,16 +67,17 @@
             panel3 = new Panel();
             tableLayoutPanel1 = new TableLayoutPanel();
             panel4 = new Panel();
+            comboBox1 = new ComboBox();
             label1 = new Label();
             tableLayoutPanel2 = new TableLayoutPanel();
             tableLayoutPanel13 = new TableLayoutPanel();
-            uiLabel10 = new Sunny.UI.UILabel();
+            LabelVidrio = new Sunny.UI.UILabel();
             tableLayoutPanel12 = new TableLayoutPanel();
-            uiLabel9 = new Sunny.UI.UILabel();
+            LabelAluminio = new Sunny.UI.UILabel();
             tableLayoutPanel11 = new TableLayoutPanel();
-            uiLabel8 = new Sunny.UI.UILabel();
+            LabelPlastico = new Sunny.UI.UILabel();
             tableLayoutPanel10 = new TableLayoutPanel();
-            uiLabel7 = new Sunny.UI.UILabel();
+            LabelPapel = new Sunny.UI.UILabel();
             tableLayoutPanel8 = new TableLayoutPanel();
             pictureBox5 = new PictureBox();
             uiLabel5 = new Sunny.UI.UILabel();
@@ -92,19 +93,20 @@
             tableLayoutPanel4 = new TableLayoutPanel();
             pictureBox1 = new PictureBox();
             tableLayoutPanel9 = new TableLayoutPanel();
-            uiLabel6 = new Sunny.UI.UILabel();
+            LabelElectronicos = new Sunny.UI.UILabel();
             panel5 = new Panel();
             label2 = new Label();
             tableLayoutPanel3 = new TableLayoutPanel();
             tableLayoutPanel27 = new TableLayoutPanel();
+            LabelBauxita = new Sunny.UI.UILabel();
             tableLayoutPanel26 = new TableLayoutPanel();
             pictureBox12 = new PictureBox();
             tableLayoutPanel25 = new TableLayoutPanel();
-            uiLabel22 = new Sunny.UI.UILabel();
+            LabelResiduos = new Sunny.UI.UILabel();
             tableLayoutPanel24 = new TableLayoutPanel();
             uiLabel21 = new Sunny.UI.UILabel();
             tableLayoutPanel23 = new TableLayoutPanel();
-            uiLabel20 = new Sunny.UI.UILabel();
+            LabelCO2 = new Sunny.UI.UILabel();
             tableLayoutPanel22 = new TableLayoutPanel();
             uiLabel19 = new Sunny.UI.UILabel();
             tableLayoutPanel21 = new TableLayoutPanel();
@@ -123,7 +125,6 @@
             pictureBox10 = new PictureBox();
             tableLayoutPanel19 = new TableLayoutPanel();
             pictureBox11 = new PictureBox();
-            uiLabel24 = new Sunny.UI.UILabel();
             uiLabel1 = new Sunny.UI.UILabel();
             uiLabel11 = new Sunny.UI.UILabel();
             uiLabel12 = new Sunny.UI.UILabel();
@@ -728,6 +729,7 @@
             // 
             // panel4
             // 
+            panel4.Controls.Add(comboBox1);
             panel4.Controls.Add(label1);
             panel4.Controls.Add(tableLayoutPanel2);
             panel4.Dock = DockStyle.Fill;
@@ -735,6 +737,15 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(645, 470);
             panel4.TabIndex = 0;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(513, 39);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 23);
+            comboBox1.TabIndex = 7;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -780,7 +791,7 @@
             tableLayoutPanel13.ColumnCount = 2;
             tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 67.21311F));
             tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 32.7868843F));
-            tableLayoutPanel13.Controls.Add(uiLabel10, 1, 0);
+            tableLayoutPanel13.Controls.Add(LabelVidrio, 1, 0);
             tableLayoutPanel13.Controls.Add(input4, 0, 0);
             tableLayoutPanel13.Dock = DockStyle.Fill;
             tableLayoutPanel13.Location = new Point(258, 213);
@@ -791,23 +802,23 @@
             tableLayoutPanel13.Size = new Size(249, 64);
             tableLayoutPanel13.TabIndex = 31;
             // 
-            // uiLabel10
+            // LabelVidrio
             // 
-            uiLabel10.Anchor = AnchorStyles.Left;
-            uiLabel10.Font = new Font("Microsoft Sans Serif", 10F);
-            uiLabel10.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel10.Location = new Point(170, 19);
-            uiLabel10.Name = "uiLabel10";
-            uiLabel10.Size = new Size(74, 26);
-            uiLabel10.TabIndex = 21;
-            uiLabel10.Text = "kg";
+            LabelVidrio.Anchor = AnchorStyles.Left;
+            LabelVidrio.Font = new Font("Microsoft Sans Serif", 10F);
+            LabelVidrio.ForeColor = Color.FromArgb(48, 48, 48);
+            LabelVidrio.Location = new Point(170, 19);
+            LabelVidrio.Name = "LabelVidrio";
+            LabelVidrio.Size = new Size(74, 26);
+            LabelVidrio.TabIndex = 21;
+            LabelVidrio.Text = "kg";
             // 
             // tableLayoutPanel12
             // 
             tableLayoutPanel12.ColumnCount = 2;
             tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 67.21311F));
             tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 32.7868843F));
-            tableLayoutPanel12.Controls.Add(uiLabel9, 1, 0);
+            tableLayoutPanel12.Controls.Add(LabelAluminio, 1, 0);
             tableLayoutPanel12.Controls.Add(input3, 0, 0);
             tableLayoutPanel12.Dock = DockStyle.Fill;
             tableLayoutPanel12.Location = new Point(258, 143);
@@ -818,23 +829,23 @@
             tableLayoutPanel12.Size = new Size(249, 64);
             tableLayoutPanel12.TabIndex = 30;
             // 
-            // uiLabel9
+            // LabelAluminio
             // 
-            uiLabel9.Anchor = AnchorStyles.Left;
-            uiLabel9.Font = new Font("Microsoft Sans Serif", 10F);
-            uiLabel9.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel9.Location = new Point(170, 19);
-            uiLabel9.Name = "uiLabel9";
-            uiLabel9.Size = new Size(74, 26);
-            uiLabel9.TabIndex = 21;
-            uiLabel9.Text = "kg";
+            LabelAluminio.Anchor = AnchorStyles.Left;
+            LabelAluminio.Font = new Font("Microsoft Sans Serif", 10F);
+            LabelAluminio.ForeColor = Color.FromArgb(48, 48, 48);
+            LabelAluminio.Location = new Point(170, 19);
+            LabelAluminio.Name = "LabelAluminio";
+            LabelAluminio.Size = new Size(74, 26);
+            LabelAluminio.TabIndex = 21;
+            LabelAluminio.Text = "kg";
             // 
             // tableLayoutPanel11
             // 
             tableLayoutPanel11.ColumnCount = 2;
             tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 67.21311F));
             tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 32.7868843F));
-            tableLayoutPanel11.Controls.Add(uiLabel8, 1, 0);
+            tableLayoutPanel11.Controls.Add(LabelPlastico, 1, 0);
             tableLayoutPanel11.Controls.Add(input2, 0, 0);
             tableLayoutPanel11.Dock = DockStyle.Fill;
             tableLayoutPanel11.Location = new Point(258, 73);
@@ -845,23 +856,23 @@
             tableLayoutPanel11.Size = new Size(249, 64);
             tableLayoutPanel11.TabIndex = 29;
             // 
-            // uiLabel8
+            // LabelPlastico
             // 
-            uiLabel8.Anchor = AnchorStyles.Left;
-            uiLabel8.Font = new Font("Microsoft Sans Serif", 10F);
-            uiLabel8.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel8.Location = new Point(170, 19);
-            uiLabel8.Name = "uiLabel8";
-            uiLabel8.Size = new Size(74, 26);
-            uiLabel8.TabIndex = 21;
-            uiLabel8.Text = "kg";
+            LabelPlastico.Anchor = AnchorStyles.Left;
+            LabelPlastico.Font = new Font("Microsoft Sans Serif", 10F);
+            LabelPlastico.ForeColor = Color.FromArgb(48, 48, 48);
+            LabelPlastico.Location = new Point(170, 19);
+            LabelPlastico.Name = "LabelPlastico";
+            LabelPlastico.Size = new Size(74, 26);
+            LabelPlastico.TabIndex = 21;
+            LabelPlastico.Text = "kg";
             // 
             // tableLayoutPanel10
             // 
             tableLayoutPanel10.ColumnCount = 2;
             tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 67.21311F));
             tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 32.7868843F));
-            tableLayoutPanel10.Controls.Add(uiLabel7, 1, 0);
+            tableLayoutPanel10.Controls.Add(LabelPapel, 1, 0);
             tableLayoutPanel10.Controls.Add(input1, 0, 0);
             tableLayoutPanel10.Dock = DockStyle.Fill;
             tableLayoutPanel10.Location = new Point(258, 3);
@@ -872,16 +883,16 @@
             tableLayoutPanel10.Size = new Size(249, 64);
             tableLayoutPanel10.TabIndex = 28;
             // 
-            // uiLabel7
+            // LabelPapel
             // 
-            uiLabel7.Anchor = AnchorStyles.Left;
-            uiLabel7.Font = new Font("Microsoft Sans Serif", 10F);
-            uiLabel7.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel7.Location = new Point(170, 19);
-            uiLabel7.Name = "uiLabel7";
-            uiLabel7.Size = new Size(74, 26);
-            uiLabel7.TabIndex = 21;
-            uiLabel7.Text = "kg";
+            LabelPapel.Anchor = AnchorStyles.Left;
+            LabelPapel.Font = new Font("Microsoft Sans Serif", 10F);
+            LabelPapel.ForeColor = Color.FromArgb(48, 48, 48);
+            LabelPapel.Location = new Point(170, 19);
+            LabelPapel.Name = "LabelPapel";
+            LabelPapel.Size = new Size(74, 26);
+            LabelPapel.TabIndex = 21;
+            LabelPapel.Text = "kg";
             // 
             // tableLayoutPanel8
             // 
@@ -1067,7 +1078,7 @@
             tableLayoutPanel9.ColumnCount = 2;
             tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 67.21311F));
             tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 32.7868843F));
-            tableLayoutPanel9.Controls.Add(uiLabel6, 1, 0);
+            tableLayoutPanel9.Controls.Add(LabelElectronicos, 1, 0);
             tableLayoutPanel9.Controls.Add(input5, 0, 0);
             tableLayoutPanel9.Dock = DockStyle.Fill;
             tableLayoutPanel9.Location = new Point(258, 283);
@@ -1078,16 +1089,16 @@
             tableLayoutPanel9.Size = new Size(249, 64);
             tableLayoutPanel9.TabIndex = 27;
             // 
-            // uiLabel6
+            // LabelElectronicos
             // 
-            uiLabel6.Anchor = AnchorStyles.Left;
-            uiLabel6.Font = new Font("Microsoft Sans Serif", 10F);
-            uiLabel6.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel6.Location = new Point(170, 19);
-            uiLabel6.Name = "uiLabel6";
-            uiLabel6.Size = new Size(74, 26);
-            uiLabel6.TabIndex = 21;
-            uiLabel6.Text = "kg";
+            LabelElectronicos.Anchor = AnchorStyles.Left;
+            LabelElectronicos.Font = new Font("Microsoft Sans Serif", 10F);
+            LabelElectronicos.ForeColor = Color.FromArgb(48, 48, 48);
+            LabelElectronicos.Location = new Point(170, 19);
+            LabelElectronicos.Name = "LabelElectronicos";
+            LabelElectronicos.Size = new Size(74, 26);
+            LabelElectronicos.TabIndex = 21;
+            LabelElectronicos.Text = "kg";
             // 
             // panel5
             // 
@@ -1149,7 +1160,7 @@
             tableLayoutPanel27.ColumnCount = 2;
             tableLayoutPanel27.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 67.21311F));
             tableLayoutPanel27.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 32.7868843F));
-            tableLayoutPanel27.Controls.Add(uiLabel24, 1, 0);
+            tableLayoutPanel27.Controls.Add(LabelBauxita, 1, 0);
             tableLayoutPanel27.Controls.Add(output7, 0, 0);
             tableLayoutPanel27.Dock = DockStyle.Fill;
             tableLayoutPanel27.Location = new Point(253, 303);
@@ -1159,6 +1170,17 @@
             tableLayoutPanel27.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel27.Size = new Size(244, 44);
             tableLayoutPanel27.TabIndex = 36;
+            // 
+            // LabelBauxita
+            // 
+            LabelBauxita.Anchor = AnchorStyles.Left;
+            LabelBauxita.Font = new Font("Microsoft Sans Serif", 10F);
+            LabelBauxita.ForeColor = Color.FromArgb(48, 48, 48);
+            LabelBauxita.Location = new Point(167, 9);
+            LabelBauxita.Name = "LabelBauxita";
+            LabelBauxita.Size = new Size(74, 26);
+            LabelBauxita.TabIndex = 22;
+            LabelBauxita.Text = "kg";
             // 
             // tableLayoutPanel26
             // 
@@ -1192,7 +1214,7 @@
             tableLayoutPanel25.ColumnCount = 2;
             tableLayoutPanel25.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 67.21311F));
             tableLayoutPanel25.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 32.7868843F));
-            tableLayoutPanel25.Controls.Add(uiLabel22, 1, 0);
+            tableLayoutPanel25.Controls.Add(LabelResiduos, 1, 0);
             tableLayoutPanel25.Controls.Add(output6, 0, 0);
             tableLayoutPanel25.Dock = DockStyle.Fill;
             tableLayoutPanel25.Location = new Point(253, 253);
@@ -1204,16 +1226,16 @@
             tableLayoutPanel25.TabIndex = 34;
             tableLayoutPanel25.Paint += tableLayoutPanel25_Paint;
             // 
-            // uiLabel22
+            // LabelResiduos
             // 
-            uiLabel22.Anchor = AnchorStyles.Left;
-            uiLabel22.Font = new Font("Microsoft Sans Serif", 10F);
-            uiLabel22.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel22.Location = new Point(167, 9);
-            uiLabel22.Name = "uiLabel22";
-            uiLabel22.Size = new Size(74, 26);
-            uiLabel22.TabIndex = 21;
-            uiLabel22.Text = "kg";
+            LabelResiduos.Anchor = AnchorStyles.Left;
+            LabelResiduos.Font = new Font("Microsoft Sans Serif", 10F);
+            LabelResiduos.ForeColor = Color.FromArgb(48, 48, 48);
+            LabelResiduos.Location = new Point(167, 9);
+            LabelResiduos.Name = "LabelResiduos";
+            LabelResiduos.Size = new Size(74, 26);
+            LabelResiduos.TabIndex = 21;
+            LabelResiduos.Text = "kg";
             // 
             // tableLayoutPanel24
             // 
@@ -1248,7 +1270,7 @@
             tableLayoutPanel23.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 67.21311F));
             tableLayoutPanel23.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 32.7868843F));
             tableLayoutPanel23.Controls.Add(output4, 0, 0);
-            tableLayoutPanel23.Controls.Add(uiLabel20, 1, 0);
+            tableLayoutPanel23.Controls.Add(LabelCO2, 1, 0);
             tableLayoutPanel23.Dock = DockStyle.Fill;
             tableLayoutPanel23.Location = new Point(253, 153);
             tableLayoutPanel23.Name = "tableLayoutPanel23";
@@ -1258,16 +1280,16 @@
             tableLayoutPanel23.Size = new Size(244, 44);
             tableLayoutPanel23.TabIndex = 32;
             // 
-            // uiLabel20
+            // LabelCO2
             // 
-            uiLabel20.Anchor = AnchorStyles.Left;
-            uiLabel20.Font = new Font("Microsoft Sans Serif", 10F);
-            uiLabel20.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel20.Location = new Point(167, 9);
-            uiLabel20.Name = "uiLabel20";
-            uiLabel20.Size = new Size(74, 26);
-            uiLabel20.TabIndex = 21;
-            uiLabel20.Text = "kg";
+            LabelCO2.Anchor = AnchorStyles.Left;
+            LabelCO2.Font = new Font("Microsoft Sans Serif", 10F);
+            LabelCO2.ForeColor = Color.FromArgb(48, 48, 48);
+            LabelCO2.Location = new Point(167, 9);
+            LabelCO2.Name = "LabelCO2";
+            LabelCO2.Size = new Size(74, 26);
+            LabelCO2.TabIndex = 21;
+            LabelCO2.Text = "kg";
             // 
             // tableLayoutPanel22
             // 
@@ -1514,17 +1536,6 @@
             pictureBox11.TabIndex = 19;
             pictureBox11.TabStop = false;
             // 
-            // uiLabel24
-            // 
-            uiLabel24.Anchor = AnchorStyles.Left;
-            uiLabel24.Font = new Font("Microsoft Sans Serif", 10F);
-            uiLabel24.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel24.Location = new Point(167, 9);
-            uiLabel24.Name = "uiLabel24";
-            uiLabel24.Size = new Size(74, 26);
-            uiLabel24.TabIndex = 22;
-            uiLabel24.Text = "kg";
-            // 
             // Calculadora
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1629,15 +1640,15 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private TableLayoutPanel tableLayoutPanel13;
-        private Sunny.UI.UILabel uiLabel10;
+        private Sunny.UI.UILabel LabelVidrio;
         private TableLayoutPanel tableLayoutPanel12;
-        private Sunny.UI.UILabel uiLabel9;
+        private Sunny.UI.UILabel LabelAluminio;
         private TableLayoutPanel tableLayoutPanel11;
-        private Sunny.UI.UILabel uiLabel8;
+        private Sunny.UI.UILabel LabelPlastico;
         private TableLayoutPanel tableLayoutPanel10;
-        private Sunny.UI.UILabel uiLabel7;
+        private Sunny.UI.UILabel LabelPapel;
         private TableLayoutPanel tableLayoutPanel9;
-        private Sunny.UI.UILabel uiLabel6;
+        private Sunny.UI.UILabel LabelElectronicos;
         private TableLayoutPanel tableLayoutPanel14;
         private PictureBox pictureBox6;
         private TableLayoutPanel tableLayoutPanel15;
@@ -1649,11 +1660,11 @@
         private TableLayoutPanel tableLayoutPanel18;
         private PictureBox pictureBox10;
         private TableLayoutPanel tableLayoutPanel25;
-        private Sunny.UI.UILabel uiLabel22;
+        private Sunny.UI.UILabel LabelResiduos;
         private TableLayoutPanel tableLayoutPanel24;
         private Sunny.UI.UILabel uiLabel21;
         private TableLayoutPanel tableLayoutPanel23;
-        private Sunny.UI.UILabel uiLabel20;
+        private Sunny.UI.UILabel LabelCO2;
         private TableLayoutPanel tableLayoutPanel22;
         private Sunny.UI.UILabel uiLabel19;
         private TableLayoutPanel tableLayoutPanel21;
@@ -1679,6 +1690,7 @@
         private Sunny.UI.UIButton uiButton1;
         private Label label1;
         private Label label2;
-        private Sunny.UI.UILabel uiLabel24;
+        private Sunny.UI.UILabel LabelBauxita;
+        private ComboBox comboBox1;
     }
 }

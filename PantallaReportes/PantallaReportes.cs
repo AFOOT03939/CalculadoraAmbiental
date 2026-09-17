@@ -188,28 +188,76 @@ namespace CalculadoraAmbienta.PantallaReportes
 
         private void crearRowsEnTablas(List<ReporteTablas> listaReportesTabla)
         {
+            // Primero agregamos los registros normales
             foreach (var listaReporte in listaReportesTabla)
             {
                 uiDataGridView1.AddRow(
-                     listaReporte.IdReporte,
-                     listaReporte.Anio,
-                     listaReporte.Mes,
-                     listaReporte.Papel,
-                     listaReporte.Plastico,
-                     listaReporte.Aluminio,
-                     listaReporte.Vidrio,
-                     listaReporte.Electronica,
-                     listaReporte.Arboles,
-                     listaReporte.Agua,
-                     listaReporte.Energia,
-                     listaReporte.RellenoSanitario,
-                     listaReporte.CO2,
-                     listaReporte.Petroleo,
-                     listaReporte.Bauxita
-                 );
+                    listaReporte.IdReporte,
+                    listaReporte.Anio,
+                    listaReporte.Mes,
+                    listaReporte.Papel,
+                    listaReporte.Plastico,
+                    listaReporte.Aluminio,
+                    listaReporte.Vidrio,
+                    listaReporte.Electronica,
+                    listaReporte.Arboles,
+                    listaReporte.Agua,
+                    listaReporte.Energia,
+                    listaReporte.RellenoSanitario,
+                    listaReporte.CO2,
+                    listaReporte.Petroleo,
+                    listaReporte.Bauxita
+                );
             }
+
+            // Sumatorias
+            double totalPapel = listaReportesTabla.Sum(x => x.Papel);
+            double totalPlastico = listaReportesTabla.Sum(x => x.Plastico);
+            double totalAluminio = listaReportesTabla.Sum(x => x.Aluminio);
+            double totalVidrio = listaReportesTabla.Sum(x => x.Vidrio);
+            double totalElectronica = listaReportesTabla.Sum(x => x.Electronica);
+
+            double totalArboles = listaReportesTabla.Sum(x => x.Arboles);
+            double totalAgua = listaReportesTabla.Sum(x => x.Agua);
+            double totalEnergia = listaReportesTabla.Sum(x => x.Energia);
+            double totalRelleno = listaReportesTabla.Sum(x => x.RellenoSanitario);
+            double totalCO2 = listaReportesTabla.Sum(x => x.CO2);
+            double totalPetroleo = listaReportesTabla.Sum(x => x.Petroleo);
+            double totalBauxita = listaReportesTabla.Sum(x => x.Bauxita);
+
+            // Agregamos la fila TOTAL
+            uiDataGridView1.AddRow(
+                "",
+                "",
+                "TOTAL",
+                totalPapel,
+                totalPlastico,
+                totalAluminio,
+                totalVidrio,
+                totalElectronica,
+                totalArboles,
+                totalAgua,
+                totalEnergia,
+                totalRelleno,
+                totalCO2,
+                totalPetroleo,
+                totalBauxita
+            );
+
+            // Estilo de selección
             uiDataGridView1.DefaultCellStyle.SelectionBackColor = Color.White;
             uiDataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
+
+            // Estilo de la fila TOTAL
+            int filaTotal = uiDataGridView1.Rows.Count - 1;
+
+            uiDataGridView1.Rows[filaTotal].DefaultCellStyle.Font = new Font(
+                uiDataGridView1.Font,
+                FontStyle.Bold
+            );
+
+            uiDataGridView1.Rows[filaTotal].DefaultCellStyle.BackColor =
+                Color.FromArgb(230, 245, 225);
         }
 
         private void crearListadoCheckBoxesAnio()

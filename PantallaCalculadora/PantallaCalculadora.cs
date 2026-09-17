@@ -21,6 +21,12 @@ namespace CalculadoraAmbienta.PantallaCalculadora
             InitializeComponent();
             _service = service;
             this.WindowState = FormWindowState.Maximized;
+            comboBox1.Items.Add("kg");
+            comboBox1.Items.Add("g");
+            comboBox1.Items.Add("lb");
+            comboBox1.Items.Add("oz");
+
+            comboBox1.SelectedIndex = 0;
         }
 
         //son los inputs
@@ -53,20 +59,22 @@ namespace CalculadoraAmbienta.PantallaCalculadora
         private void uiButton1_Click(object sender, EventArgs e)
         {
 
-            string papel = input1.Text;
-            string plastico = input2.Text;
-            string aluminio = input3.Text;
-            string vidrio = input4.Text;
-            string electronicos = input5.Text;
+            string unidad = comboBox1.SelectedItem.ToString();
+
+            double papel = _service.ConvertirAKg(double.Parse(input1.Text), unidad);
+            double plastico = _service.ConvertirAKg(double.Parse(input2.Text), unidad);
+            double aluminio = _service.ConvertirAKg(double.Parse(input3.Text), unidad);
+            double vidrio = _service.ConvertirAKg(double.Parse(input4.Text), unidad);
+            double electronicos = _service.ConvertirAKg(double.Parse(input5.Text), unidad);
 
             // se crea el objeto Reporte para enviarlo al servicio para calcular los outputs
             var objetoInputs = new Reporte
             {
-                Papel = double.Parse(papel),
-                Plastico = double.Parse(plastico),
-                Aluminio = double.Parse(aluminio),
-                Vidrio = double.Parse(vidrio),
-                Electronica = double.Parse(electronicos)
+                Papel = papel,
+                Plastico = plastico,
+                Aluminio = aluminio,
+                Vidrio = vidrio,
+                Electronica = electronicos
             };
 
             Resultados resultado = PantallaService.calculadora(objetoInputs);
@@ -75,10 +83,11 @@ namespace CalculadoraAmbienta.PantallaCalculadora
             output1.Text = resultado.Arboles.ToString();
             output2.Text = resultado.Agua.ToString();
             output3.Text = resultado.Energia.ToString();
-            output4.Text = resultado.CO2.ToString();
             output5.Text = resultado.Petroleo.ToString();
-            output6.Text = resultado.RellenoSanitario.ToString();
-            output7.Text = resultado.Bauxita.ToString();
+
+            output4.Text = _service.ConvertirDesdeKg(resultado.CO2, unidad).ToString();
+            output6.Text = _service.ConvertirDesdeKg(resultado.RellenoSanitario, unidad).ToString();
+            output7.Text = _service.ConvertirDesdeKg(resultado.Bauxita, unidad).ToString();
         }
 
         private void output6_TextChanged(object sender, EventArgs e)
@@ -172,6 +181,21 @@ namespace CalculadoraAmbienta.PantallaCalculadora
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string unidad = comboBox1.SelectedItem.ToString();
+
+            LabelPapel.Text = unidad;
+            LabelPlastico.Text = unidad;
+            LabelAluminio.Text = unidad;
+            LabelVidrio.Text = unidad;
+            LabelElectronicos.Text = unidad;
+
+            LabelCO2.Text = unidad;
+            LabelResiduos.Text = unidad;
+            LabelBauxita.Text = unidad;
         }
     }
 }
