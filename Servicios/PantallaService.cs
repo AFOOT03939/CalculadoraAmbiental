@@ -232,47 +232,5 @@ namespace CalculadoraAmbienta.Servicios
 
             return mesesTraducidos;
         }
-
-        public double ConvertirAKg(double cantidad, string unidad)
-        {
-            switch (unidad)
-            {
-                case "kg":
-                    return cantidad;
-
-                case "g":
-                    return cantidad / 1000.0;
-
-                case "lb":
-                    return cantidad * 0.45359237;
-
-                case "oz":
-                    return cantidad * 0.028349523125;
-
-                default:
-                    return cantidad;
-            }
-        }
-
-        public double ConvertirDesdeKg(double cantidadKg, string unidad)
-        {
-            switch (unidad)
-            {
-                case "kg":
-                    return cantidadKg;
-
-                case "g":
-                    return cantidadKg * 1000.0;
-
-                case "lb":
-                    return cantidadKg / 0.45359237;
-
-                case "oz":
-                    return cantidadKg / 0.028349523125;
-
-                default:
-                    return cantidadKg;
-            }
-        }
     }
 }

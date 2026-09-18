@@ -67,7 +67,6 @@
             panel3 = new Panel();
             tableLayoutPanel1 = new TableLayoutPanel();
             panel4 = new Panel();
-            comboBox1 = new ComboBox();
             label1 = new Label();
             tableLayoutPanel2 = new TableLayoutPanel();
             tableLayoutPanel13 = new TableLayoutPanel();
@@ -729,7 +728,6 @@
             // 
             // panel4
             // 
-            panel4.Controls.Add(comboBox1);
             panel4.Controls.Add(label1);
             panel4.Controls.Add(tableLayoutPanel2);
             panel4.Dock = DockStyle.Fill;
@@ -737,15 +735,6 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(645, 470);
             panel4.TabIndex = 0;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(513, 39);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 7;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -1691,6 +1680,5 @@
         private Label label1;
         private Label label2;
         private Sunny.UI.UILabel LabelBauxita;
-        private ComboBox comboBox1;
     }
 }
