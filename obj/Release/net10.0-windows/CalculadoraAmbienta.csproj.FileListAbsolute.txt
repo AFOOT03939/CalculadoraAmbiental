@@ -151,3 +151,7 @@ E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\obj\Release\
 E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\obj\Release\net10.0-windows\CalculadoraAmbienta.genruntimeconfig.cache
 E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\obj\Release\net10.0-windows\ref\CalculadoraAmbienta.dll
 E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\obj\Release\net10.0-windows\CalculadoraAmbienta.Properties.Resources.resources
+E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Release\net10.0-windows\DeviceId.dll
+E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Release\net10.0-windows\Irony.dll
+E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Release\net10.0-windows\SlapKit.Excel.dll
+E:\Users\victo\source\repos\CalculadoraAmbienta\CalculadoraAmbienta\bin\Release\net10.0-windows\XLParser.dll

@@ -14,6 +14,7 @@
           "DataJuggler.Blazor.Components": "10.1.9",
           "Microsoft.Data.Sqlite": "10.0.10",
           "Microsoft.Extensions.DependencyInjection": "10.0.10",
+          "SlapKit.Excel": "2.2.0",
           "SunnyUI": "3.9.7"
         },
         "runtime": {
@@ -168,6 +169,14 @@
           }
         }
       },
+      "DeviceId/6.6.0": {
+        "runtime": {
+          "lib/net8.0/DeviceId.dll": {
+            "assemblyVersion": "6.6.0.0",
+            "fileVersion": "6.6.0.0"
+          }
+        }
+      },
       "DocumentFormat.OpenXml/3.1.1": {
         "dependencies": {
           "DocumentFormat.OpenXml.Framework": "3.1.1"
@@ -208,6 +217,14 @@
           "lib/net8.0/ExtendedNumerics.BigDecimal.dll": {
             "assemblyVersion": "2025.1001.2.129",
             "fileVersion": "2025.1001.2.129"
+          }
+        }
+      },
+      "Irony.NetCore/1.0.11": {
+        "runtime": {
+          "lib/netstandard1.6/Irony.dll": {
+            "assemblyVersion": "1.0.11.0",
+            "fileVersion": "1.0.11.0"
           }
         }
       },
@@ -883,6 +900,21 @@
           }
         }
       },
+      "SlapKit.Excel/2.2.0": {
+        "dependencies": {
+          "DeviceId": "6.6.0",
+          "DocumentFormat.OpenXml": "3.1.1",
+          "ExcelNumberFormat": "1.1.0",
+          "SixLabors.Fonts": "1.0.0",
+          "XLParser": "1.5.2"
+        },
+        "runtime": {
+          "lib/netstandard2.1/SlapKit.Excel.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        }
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.1.11": {
         "dependencies": {
           "SQLitePCLRaw.lib.e_sqlite3": "2.1.11",
@@ -1084,6 +1116,17 @@
           }
         }
       },
+      "XLParser/1.5.2": {
+        "dependencies": {
+          "Irony.NetCore": "1.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.6/XLParser.dll": {
+            "assemblyVersion": "1.5.2.0",
+            "fileVersion": "1.5.2.0"
+          }
+        }
+      },
       "ZString/2.6.0": {
         "runtime": {
           "lib/net7.0/ZString.dll": {
@@ -1191,6 +1234,13 @@
       "path": "datajuggler.ultimatehelper/10.0.5",
       "hashPath": "datajuggler.ultimatehelper.10.0.5.nupkg.sha512"
     },
+    "DeviceId/6.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2JRxRgo+G1IeZATnIe0tGEGZU2IU7xZ3Epj7tadV7JbsAWBPoANEhrS6Nncw8OJLHVPGtR6K0XalCwYb+hJpnQ==",
+      "path": "deviceid/6.6.0",
+      "hashPath": "deviceid.6.6.0.nupkg.sha512"
+    },
     "DocumentFormat.OpenXml/3.1.1": {
       "type": "package",
       "serviceable": true,
@@ -1225,6 +1275,13 @@
       "sha512": "sha512-+woGT1lsBtwkntOpx2EZbdbySv0aWPefE0vrfvclxVdbi4oa2bbtphFPWgMiQe+kRCPICbfFJwp6w1DuR7Ge2Q==",
       "path": "extendednumerics.bigdecimal/2025.1001.2.129",
       "hashPath": "extendednumerics.bigdecimal.2025.1001.2.129.nupkg.sha512"
+    },
+    "Irony.NetCore/1.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/2MCkqdhEjPiSTZKYXg6u9AO9o3m68biqcFHAnM28WdnrcZii2vYbmKPzT5ejByyV72FUlygOtHBMt8SLnUyNw==",
+      "path": "irony.netcore/1.0.11",
+      "hashPath": "irony.netcore.1.0.11.nupkg.sha512"
     },
     "Konscious.Security.Cryptography.Argon2/1.3.1": {
       "type": "package",
@@ -1569,6 +1626,13 @@
       "path": "skiasharp.nativeassets.win32/3.119.2",
       "hashPath": "skiasharp.nativeassets.win32.3.119.2.nupkg.sha512"
     },
+    "SlapKit.Excel/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rcEgYQzfZ9ERiqpn0igqOwMJD+mMjN/pcyDWNjxoi51WbyndF2NrmlsNvTYvClao1/41nsga24QSZUFPEW2ihA==",
+      "path": "slapkit.excel/2.2.0",
+      "hashPath": "slapkit.excel.2.2.0.nupkg.sha512"
+    },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.11": {
       "type": "package",
       "serviceable": true,
@@ -1631,6 +1695,13 @@
       "sha512": "sha512-BVYuec3jV23EMRDeR7Dr1/qhx7369dZzJ9IWy2xylvb4YfXsrUxspWc4UWYid/tj4zZK58uGZqn2WQiaDMhmAg==",
       "path": "system.memory.data/8.0.1",
       "hashPath": "system.memory.data.8.0.1.nupkg.sha512"
+    },
+    "XLParser/1.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8tnUCmMbn6c/HGuHFyq1sulHym8YReTKDNXFFQk0U8nldNx6RGrwRvLh0+aQjEc7YoC3Q1ztH1npLt7dClKqjw==",
+      "path": "xlparser/1.5.2",
+      "hashPath": "xlparser.1.5.2.nupkg.sha512"
     },
     "ZString/2.6.0": {
       "type": "package",

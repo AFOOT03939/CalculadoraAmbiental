@@ -82,6 +82,8 @@ namespace CalculadoraAmbienta.PantallaReportes
             uiGroupBox1.Anchor = AnchorStyles.Right;
             uiGroupBox1.Controls.Add(panel3);
             uiGroupBox1.Controls.Add(panel1);
+            uiGroupBox1.FillColor = SystemColors.Control;
+            uiGroupBox1.FillColor2 = SystemColors.Control;
             uiGroupBox1.Font = new Font("Microsoft Sans Serif", 12F);
             uiGroupBox1.Location = new Point(53, 7);
             uiGroupBox1.Margin = new Padding(4, 5, 4, 5);
@@ -98,7 +100,7 @@ namespace CalculadoraAmbienta.PantallaReportes
             // 
             panel3.AutoScroll = true;
             panel3.Controls.Add(uiCheckBoxGroup2);
-            panel3.ForeColor = Color.White;
+            panel3.ForeColor = SystemColors.Control;
             panel3.Location = new Point(15, 155);
             panel3.Name = "panel3";
             panel3.Size = new Size(210, 280);
@@ -107,13 +109,15 @@ namespace CalculadoraAmbienta.PantallaReportes
             // uiCheckBoxGroup2
             // 
             uiCheckBoxGroup2.CheckBoxColor = Color.FromArgb(57, 131, 48);
+            uiCheckBoxGroup2.FillColor = SystemColors.Control;
+            uiCheckBoxGroup2.FillColor2 = SystemColors.Control;
             uiCheckBoxGroup2.Font = new Font("Microsoft Sans Serif", 12F);
             uiCheckBoxGroup2.Location = new Point(4, 5);
             uiCheckBoxGroup2.Margin = new Padding(4, 5, 4, 5);
             uiCheckBoxGroup2.MinimumSize = new Size(1, 1);
             uiCheckBoxGroup2.Name = "uiCheckBoxGroup2";
             uiCheckBoxGroup2.Padding = new Padding(0, 32, 0, 0);
-            uiCheckBoxGroup2.RectColor = Color.White;
+            uiCheckBoxGroup2.RectColor = SystemColors.Control;
             uiCheckBoxGroup2.SelectedIndexes = (List<int>)resources.GetObject("uiCheckBoxGroup2.SelectedIndexes");
             uiCheckBoxGroup2.Size = new Size(187, 400);
             uiCheckBoxGroup2.TabIndex = 1;
@@ -125,7 +129,7 @@ namespace CalculadoraAmbienta.PantallaReportes
             // 
             panel1.AutoScroll = true;
             panel1.Controls.Add(uiCheckBoxGroup1);
-            panel1.ForeColor = Color.White;
+            panel1.ForeColor = SystemColors.Control;
             panel1.Location = new Point(15, 35);
             panel1.Name = "panel1";
             panel1.Size = new Size(210, 96);
@@ -134,13 +138,16 @@ namespace CalculadoraAmbienta.PantallaReportes
             // uiCheckBoxGroup1
             // 
             uiCheckBoxGroup1.CheckBoxColor = Color.FromArgb(57, 131, 48);
+            uiCheckBoxGroup1.FillColor = SystemColors.Control;
+            uiCheckBoxGroup1.FillColor2 = SystemColors.Control;
             uiCheckBoxGroup1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiCheckBoxGroup1.HoverColor = SystemColors.Control;
             uiCheckBoxGroup1.Location = new Point(4, 5);
             uiCheckBoxGroup1.Margin = new Padding(4, 5, 4, 5);
             uiCheckBoxGroup1.MinimumSize = new Size(1, 1);
             uiCheckBoxGroup1.Name = "uiCheckBoxGroup1";
             uiCheckBoxGroup1.Padding = new Padding(0, 32, 0, 0);
-            uiCheckBoxGroup1.RectColor = Color.White;
+            uiCheckBoxGroup1.RectColor = SystemColors.Control;
             uiCheckBoxGroup1.SelectedIndexes = (List<int>)resources.GetObject("uiCheckBoxGroup1.SelectedIndexes");
             uiCheckBoxGroup1.Size = new Size(187, 1000);
             uiCheckBoxGroup1.TabIndex = 0;
@@ -272,6 +279,7 @@ namespace CalculadoraAmbienta.PantallaReportes
             // tableLayoutPanel3
             // 
             tableLayoutPanel3.Anchor = AnchorStyles.Right;
+            tableLayoutPanel3.BackColor = SystemColors.Control;
             tableLayoutPanel3.ColumnCount = 1;
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
@@ -417,7 +425,7 @@ namespace CalculadoraAmbienta.PantallaReportes
             // 
             // panel4
             // 
-            panel4.BackColor = Color.White;
+            panel4.BackColor = SystemColors.Control;
             panel4.Dock = DockStyle.Bottom;
             panel4.Location = new Point(0, 691);
             panel4.Name = "panel4";
