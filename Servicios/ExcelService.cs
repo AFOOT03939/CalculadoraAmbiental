@@ -1,5 +1,6 @@
 ﻿using CalculadoraAmbienta.Modelos;
-using ClosedXML.Excel;
+using SlapKit.Excel.Excel;
+using SlapKit.Excel.Excel.Charts.ChartTypes;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,18 +11,25 @@ namespace CalculadoraAmbienta.Servicios
     {
         public byte[] crearReporteExcelPrincipal(List<ReporteTablas> reporteCompleto)
         {
-            using var workbook = new XLWorkbook();
+            using XLWorkbook workbook = new XLWorkbook();
 
             var worksheet = workbook.Worksheets.Add("Reporte");
 
             worksheet.Cell(1, 1).InsertTable(reporteCompleto);
 
+            int filaTotal = 0;
+
             if (reporteCompleto.Count > 0)
             {
-                int filaTotal = reporteCompleto.Count + 2;
+                //fila total es donde se va a encontrar la fila del total
+                //le sumamos +2 para tomar en cuenta el encabezado
+                //1 para el encabezado, 2 para la nueva fila
+                //si son 5 registros, quedan 7 al final
+                filaTotal = reporteCompleto.Count + 2;
 
                 worksheet.Cell(filaTotal, 3).Value = "TOTAL";
 
+                //se calcula el total, D2 es el primer registro y total - 1 para ignorar la fila del total
                 worksheet.Cell(filaTotal, 4).FormulaA1 = $"=SUM(D2:D{filaTotal - 1})";
                 worksheet.Cell(filaTotal, 5).FormulaA1 = $"=SUM(E2:E{filaTotal - 1})";
                 worksheet.Cell(filaTotal, 6).FormulaA1 = $"=SUM(F2:F{filaTotal - 1})";
@@ -36,6 +44,34 @@ namespace CalculadoraAmbienta.Servicios
                 worksheet.Cell(filaTotal, 15).FormulaA1 = $"=SUM(O2:O{filaTotal - 1})";
 
                 worksheet.Range(filaTotal, 3, filaTotal, 15).Style.Font.Bold = true;
+
+                // Gráfico de los inputs
+                //esto define la posición del gráfico
+                IXLBarChart barChartInputs = worksheet.Charts
+                    .AddBarChart()
+                    .MoveTo(
+                        fromCell: worksheet.Cell($"B{filaTotal + 2}"),
+                        toCell: worksheet.Cell($"O{filaTotal + 14}")
+                    );
+
+                //esto define las categorías y sus valores (50L de agua...)
+                barChartInputs.Series.Add()
+                    .SetName("Total de Entradas de Materiales")
+                    .SetCategories(worksheet.Range("D1:H1"))
+                    .SetValues(worksheet.Range($"D{filaTotal}:H{filaTotal}"));
+
+                // Gráfico de los outputs
+                IXLBarChart barChartOutputs = worksheet.Charts
+                    .AddBarChart()
+                    .MoveTo(
+                        fromCell: worksheet.Cell($"B{filaTotal + 16}"),
+                        toCell: worksheet.Cell($"O{filaTotal + 28}")
+                    );
+
+                barChartOutputs.Series.Add()
+                    .SetName("Total de Material Reciclado")
+                    .SetCategories(worksheet.Range("I1:O1"))
+                    .SetValues(worksheet.Range($"I{filaTotal}:O{filaTotal}"));
             }
 
             worksheet.Columns().AdjustToContents();

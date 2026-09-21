@@ -312,9 +312,11 @@
             input1.Size = new Size(150, 29);
             input1.TabIndex = 10;
             input1.Tag = "";
-            input1.Text = "0";
+            input1.Text = "0.00";
             input1.TextAlignment = ContentAlignment.MiddleLeft;
+            input1.Type = Sunny.UI.UITextBox.UIEditType.Double;
             input1.Watermark = "";
+            input1.TextChanged += input1_TextChanged;
             // 
             // input2
             // 
@@ -329,8 +331,9 @@
             input2.ShowText = false;
             input2.Size = new Size(150, 29);
             input2.TabIndex = 11;
-            input2.Text = "0";
+            input2.Text = "0.00";
             input2.TextAlignment = ContentAlignment.MiddleLeft;
+            input2.Type = Sunny.UI.UITextBox.UIEditType.Double;
             input2.Watermark = "";
             // 
             // input3
@@ -346,8 +349,9 @@
             input3.ShowText = false;
             input3.Size = new Size(150, 29);
             input3.TabIndex = 12;
-            input3.Text = "0";
+            input3.Text = "0.00";
             input3.TextAlignment = ContentAlignment.MiddleLeft;
+            input3.Type = Sunny.UI.UITextBox.UIEditType.Double;
             input3.Watermark = "";
             // 
             // input4
@@ -363,8 +367,9 @@
             input4.ShowText = false;
             input4.Size = new Size(150, 29);
             input4.TabIndex = 13;
-            input4.Text = "0";
+            input4.Text = "0.00";
             input4.TextAlignment = ContentAlignment.MiddleLeft;
+            input4.Type = Sunny.UI.UITextBox.UIEditType.Double;
             input4.Watermark = "";
             // 
             // input5
@@ -380,8 +385,9 @@
             input5.ShowText = false;
             input5.Size = new Size(150, 29);
             input5.TabIndex = 14;
-            input5.Text = "0";
+            input5.Text = "0.00";
             input5.TextAlignment = ContentAlignment.MiddleLeft;
+            input5.Type = Sunny.UI.UITextBox.UIEditType.Double;
             input5.Watermark = "";
             // 
             // output5

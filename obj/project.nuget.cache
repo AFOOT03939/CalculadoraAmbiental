@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tVHZc1OOQoM=",
+  "dgSpecHash": "vaJ5Aq9ban0=",
   "success": true,
   "projectFilePath": "E:\\Users\\victo\\source\\repos\\CalculadoraAmbienta\\CalculadoraAmbienta\\CalculadoraAmbienta.csproj",
   "expectedPackageFiles": [
@@ -17,11 +17,13 @@
     "E:\\Users\\victo\\.nuget\\packages\\datajuggler.excelerate\\10.0.16\\datajuggler.excelerate.10.0.16.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\datajuggler.net.data\\10.0.6\\datajuggler.net.data.10.0.6.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\datajuggler.ultimatehelper\\10.0.5\\datajuggler.ultimatehelper.10.0.5.nupkg.sha512",
+    "E:\\Users\\victo\\.nuget\\packages\\deviceid\\6.6.0\\deviceid.6.6.0.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\documentformat.openxml\\3.1.1\\documentformat.openxml.3.1.1.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\documentformat.openxml.framework\\3.1.1\\documentformat.openxml.framework.3.1.1.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\enums.net\\5.0.0\\enums.net.5.0.0.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\excelnumberformat\\1.1.0\\excelnumberformat.1.1.0.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\extendednumerics.bigdecimal\\2025.1001.2.129\\extendednumerics.bigdecimal.2025.1001.2.129.nupkg.sha512",
+    "E:\\Users\\victo\\.nuget\\packages\\irony.netcore\\1.0.11\\irony.netcore.1.0.11.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\konscious.security.cryptography.argon2\\1.3.1\\konscious.security.cryptography.argon2.1.3.1.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\konscious.security.cryptography.blake2\\1.1.1\\konscious.security.cryptography.blake2.1.1.1.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\mathnet.numerics.signed\\5.0.0\\mathnet.numerics.signed.5.0.0.nupkg.sha512",
@@ -63,9 +65,11 @@
     "E:\\Users\\victo\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.7.1\\microsoft.identitymodel.tokens.7.7.1.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\microsoft.io.recyclablememorystream\\3.0.1\\microsoft.io.recyclablememorystream.3.0.1.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\microsoft.jsinterop\\10.0.10\\microsoft.jsinterop.10.0.10.nupkg.sha512",
+    "E:\\Users\\victo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\microsoft.sourcelink.common\\8.0.0\\microsoft.sourcelink.common.8.0.0.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\microsoft.sourcelink.github\\8.0.0\\microsoft.sourcelink.github.8.0.0.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "E:\\Users\\victo\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\npoi\\2.8.0\\npoi.2.8.0.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\rbush.signed\\4.0.0\\rbush.signed.4.0.0.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\sharpziplib\\1.4.2\\sharpziplib.1.4.2.nupkg.sha512",
@@ -75,6 +79,7 @@
     "E:\\Users\\victo\\.nuget\\packages\\skiasharp.nativeassets.linux.nodependencies\\3.119.2\\skiasharp.nativeassets.linux.nodependencies.3.119.2.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\skiasharp.nativeassets.macos\\3.119.2\\skiasharp.nativeassets.macos.3.119.2.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\skiasharp.nativeassets.win32\\3.119.2\\skiasharp.nativeassets.win32.3.119.2.nupkg.sha512",
+    "E:\\Users\\victo\\.nuget\\packages\\slapkit.excel\\2.2.0\\slapkit.excel.2.2.0.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.11\\sqlitepclraw.bundle_e_sqlite3.2.1.11.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\sqlitepclraw.core\\2.1.11\\sqlitepclraw.core.2.1.11.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.11\\sqlitepclraw.lib.e_sqlite3.2.1.11.nupkg.sha512",
@@ -84,9 +89,22 @@
     "E:\\Users\\victo\\.nuget\\packages\\system.clientmodel\\1.8.0\\system.clientmodel.1.8.0.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.7.1\\system.identitymodel.tokens.jwt.7.7.1.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\system.memory.data\\8.0.1\\system.memory.data.8.0.1.nupkg.sha512",
+    "E:\\Users\\victo\\.nuget\\packages\\xlparser\\1.5.2\\xlparser.1.5.2.nupkg.sha512",
     "E:\\Users\\victo\\.nuget\\packages\\zstring\\2.6.0\\zstring.2.6.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "El paquete \"Microsoft.Build.Tasks.Git\" 8.0.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-23fw-v26w-5fgq",
+      "projectPath": "E:\\Users\\victo\\source\\repos\\CalculadoraAmbienta\\CalculadoraAmbienta\\CalculadoraAmbienta.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\Users\\victo\\source\\repos\\CalculadoraAmbienta\\CalculadoraAmbienta\\CalculadoraAmbienta.csproj",
+      "libraryId": "Microsoft.Build.Tasks.Git",
+      "targetGraphs": [
+        "net10.0-windows"
+      ]
+    },
     {
       "code": "NU1903",
       "level": "Warning",

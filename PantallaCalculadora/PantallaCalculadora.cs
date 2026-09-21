@@ -65,7 +65,7 @@ namespace CalculadoraAmbienta.PantallaCalculadora
                 Plastico = double.Parse(plastico),
                 Aluminio = double.Parse(aluminio),
                 Vidrio = double.Parse(vidrio),
-                Electronica = double.Parse(electronicos)    
+                Electronica = double.Parse(electronicos)
             };
 
             Resultados resultado = PantallaService.calculadora(objetoInputs);
@@ -174,6 +174,11 @@ namespace CalculadoraAmbienta.PantallaCalculadora
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void input1_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -193,6 +193,19 @@
           "lib/net10.0/DataJuggler.UltimateHelper.dll": {}
         }
       },
+      "DeviceId/6.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/DeviceId.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/DeviceId.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DocumentFormat.OpenXml/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -259,6 +272,18 @@
           "lib/net8.0/ExtendedNumerics.BigDecimal.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Irony.NetCore/1.0.11": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Irony.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Irony.dll": {}
         }
       },
       "Konscious.Security.Cryptography.Argon2/1.3.1": {
@@ -995,6 +1020,15 @@
           }
         }
       },
+      "Microsoft.NETCore.Platforms/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
       "Microsoft.SourceLink.Common/8.0.0": {
         "type": "package",
         "build": {
@@ -1028,6 +1062,12 @@
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "NETStandard.Library/1.6.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
       "NPOI/2.8.0": {
@@ -1251,6 +1291,26 @@
           }
         }
       },
+      "SlapKit.Excel/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "DeviceId": "6.6.0",
+          "DocumentFormat.OpenXml": "[3.1.1, 4.0.0)",
+          "ExcelNumberFormat": "1.1.0",
+          "SixLabors.Fonts": "1.0.0",
+          "XLParser": "1.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.1/SlapKit.Excel.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/SlapKit.Excel.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.1.11": {
         "type": "package",
         "dependencies": {
@@ -1467,6 +1527,19 @@
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "XLParser/1.5.2": {
+        "type": "package",
+        "dependencies": {
+          "Irony.NetCore": "1.0.11",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/XLParser.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/XLParser.dll": {}
         }
       },
       "ZString/2.6.0": {
@@ -1744,6 +1817,32 @@
         "lib/net10.0/DataJuggler.UltimateHelper.dll"
       ]
     },
+    "DeviceId/6.6.0": {
+      "sha512": "2JRxRgo+G1IeZATnIe0tGEGZU2IU7xZ3Epj7tadV7JbsAWBPoANEhrS6Nncw8OJLHVPGtR6K0XalCwYb+hJpnQ==",
+      "type": "package",
+      "path": "deviceid/6.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "deviceid.6.6.0.nupkg.sha512",
+        "deviceid.nuspec",
+        "lib/net35/DeviceId.dll",
+        "lib/net35/DeviceId.xml",
+        "lib/net40/DeviceId.dll",
+        "lib/net40/DeviceId.xml",
+        "lib/net5.0/DeviceId.dll",
+        "lib/net5.0/DeviceId.xml",
+        "lib/net6.0/DeviceId.dll",
+        "lib/net6.0/DeviceId.xml",
+        "lib/net7.0/DeviceId.dll",
+        "lib/net7.0/DeviceId.xml",
+        "lib/net8.0/DeviceId.dll",
+        "lib/net8.0/DeviceId.xml",
+        "lib/netstandard2.0/DeviceId.dll",
+        "lib/netstandard2.0/DeviceId.xml",
+        "readme.md"
+      ]
+    },
     "DocumentFormat.OpenXml/3.1.1": {
       "sha512": "2z9QBzeTLNNKWM9SaOSDMegfQk/7hDuElOsmF77pKZMkFRP/GHA/W/4yOAQD9kn15N/FsFxHn3QVYkatuZghiA==",
       "type": "package",
@@ -1868,6 +1967,20 @@
         "lib/netstandard2.0/ExtendedNumerics.BigDecimal.xml",
         "lib/netstandard2.1/ExtendedNumerics.BigDecimal.dll",
         "lib/netstandard2.1/ExtendedNumerics.BigDecimal.xml"
+      ]
+    },
+    "Irony.NetCore/1.0.11": {
+      "sha512": "/2MCkqdhEjPiSTZKYXg6u9AO9o3m68biqcFHAnM28WdnrcZii2vYbmKPzT5ejByyV72FUlygOtHBMt8SLnUyNw==",
+      "type": "package",
+      "path": "irony.netcore/1.0.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "irony.netcore.1.0.11.nupkg.sha512",
+        "irony.netcore.nuspec",
+        "lib/net452/Irony.dll",
+        "lib/net461/Irony.dll",
+        "lib/netstandard1.6/Irony.dll"
       ]
     },
     "Konscious.Security.Cryptography.Argon2/1.3.1": {
@@ -2922,6 +3035,21 @@
         "microsoft.jsinterop.nuspec"
       ]
     },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json"
+      ]
+    },
     "Microsoft.SourceLink.Common/8.0.0": {
       "sha512": "dk9JPxTCIevS75HyEQ0E4OVAFhB2N+V9ShCXf8Q6FkUQZDkgLI12y679Nym1YqsiSysuQskT7Z+6nUf3yab6Vw==",
       "type": "package",
@@ -3029,6 +3157,19 @@
         "lib/netstandard2.0/Microsoft.SqlServer.Server.xml",
         "microsoft.sqlserver.server.1.0.0.nupkg.sha512",
         "microsoft.sqlserver.server.nuspec"
+      ]
+    },
+    "NETStandard.Library/1.6.1": {
+      "sha512": "WcSp3+vP+yHNgS8EV5J7pZ9IRpeDuARBPN28by8zqff1wJQXm26PVU8L3/fYLBJVU7BtDyqNVWq2KlCVvSSR4A==",
+      "type": "package",
+      "path": "netstandard.library/1.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "netstandard.library.1.6.1.nupkg.sha512",
+        "netstandard.library.nuspec"
       ]
     },
     "NPOI/2.8.0": {
@@ -3323,6 +3464,24 @@
         "skiasharp.nativeassets.win32.nuspec"
       ]
     },
+    "SlapKit.Excel/2.2.0": {
+      "sha512": "rcEgYQzfZ9ERiqpn0igqOwMJD+mMjN/pcyDWNjxoi51WbyndF2NrmlsNvTYvClao1/41nsga24QSZUFPEW2ihA==",
+      "type": "package",
+      "path": "slapkit.excel/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/netstandard2.0/SlapKit.Excel.dll",
+        "lib/netstandard2.0/SlapKit.Excel.xml",
+        "lib/netstandard2.1/SlapKit.Excel.dll",
+        "lib/netstandard2.1/SlapKit.Excel.xml",
+        "nuget-logo.png",
+        "nugetREADME.md",
+        "slapkit.excel.2.2.0.nupkg.sha512",
+        "slapkit.excel.nuspec"
+      ]
+    },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.11": {
       "sha512": "DC4nA7yWnf4UZdgJDF+9Mus4/cb0Y3Sfgi3gDnAoKNAIBwzkskNAbNbyu+u4atT0ruVlZNJfwZmwiEwE5oz9LQ==",
       "type": "package",
@@ -3530,6 +3689,20 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "XLParser/1.5.2": {
+      "sha512": "8tnUCmMbn6c/HGuHFyq1sulHym8YReTKDNXFFQk0U8nldNx6RGrwRvLh0+aQjEc7YoC3Q1ztH1npLt7dClKqjw==",
+      "type": "package",
+      "path": "xlparser/1.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/XLParser.dll",
+        "lib/net461/XLParser.dll",
+        "lib/netstandard1.6/XLParser.dll",
+        "xlparser.1.5.2.nupkg.sha512",
+        "xlparser.nuspec"
+      ]
+    },
     "ZString/2.6.0": {
       "sha512": "XE8a+11nZg0LRaf+RGABEWaHIf8yGd5w8v/Ra1iWxMBmAVzwuKbW7G21mS0U7w7sh1lYcgckInWGgnz4qyET8A==",
       "type": "package",
@@ -3559,6 +3732,7 @@
       "DataJuggler.Blazor.Components >= 10.1.9",
       "Microsoft.Data.Sqlite >= 10.0.10",
       "Microsoft.Extensions.DependencyInjection >= 10.0.10",
+      "SlapKit.Excel >= 2.2.0",
       "SunnyUI >= 3.9.7"
     ]
   },
@@ -3637,6 +3811,10 @@
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[10.0.10, )"
+          },
+          "SlapKit.Excel": {
+            "target": "Package",
+            "version": "[2.2.0, )"
           },
           "SunnyUI": {
             "target": "Package",
@@ -3957,6 +4135,16 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Microsoft.Build.Tasks.Git\" 8.0.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-23fw-v26w-5fgq",
+      "libraryId": "Microsoft.Build.Tasks.Git",
+      "targetGraphs": [
+        "net10.0-windows"
+      ]
+    },
     {
       "code": "NU1903",
       "level": "Warning",
