@@ -189,7 +189,7 @@
             uiLabel1.Anchor = AnchorStyles.Left;
             uiLabel1.Font = new Font("Microsoft Sans Serif", 10F);
             uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel1.Location = new Point(49, 20);
+            uiLabel1.Location = new Point(54, 20);
             uiLabel1.Name = "uiLabel1";
             uiLabel1.Size = new Size(53, 23);
             uiLabel1.TabIndex = 15;
@@ -280,7 +280,7 @@
             submitButton.FillPressColor = Color.FromArgb(45, 108, 38);
             submitButton.FillSelectedColor = Color.FromArgb(45, 108, 38);
             submitButton.Font = new Font("Microsoft Sans Serif", 12F);
-            submitButton.Location = new Point(86, 3);
+            submitButton.Location = new Point(113, 3);
             submitButton.MinimumSize = new Size(1, 1);
             submitButton.Name = "submitButton";
             submitButton.RectColor = Color.FromArgb(57, 131, 48);
@@ -528,7 +528,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1264, 125);
+            panel1.Size = new Size(1350, 125);
             panel1.TabIndex = 23;
             // 
             // tableLayoutPanel28
@@ -544,7 +544,7 @@
             tableLayoutPanel28.RowCount = 1;
             tableLayoutPanel28.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel28.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel28.Size = new Size(1264, 125);
+            tableLayoutPanel28.Size = new Size(1350, 125);
             tableLayoutPanel28.TabIndex = 2;
             // 
             // panel8
@@ -553,9 +553,9 @@
             panel8.Controls.Add(tableLayoutPanel29);
             panel8.Controls.Add(panel9);
             panel8.Dock = DockStyle.Fill;
-            panel8.Location = new Point(129, 3);
+            panel8.Location = new Point(138, 3);
             panel8.Name = "panel8";
-            panel8.Size = new Size(1005, 119);
+            panel8.Size = new Size(1074, 119);
             panel8.TabIndex = 4;
             // 
             // label11
@@ -634,16 +634,16 @@
             panel9.Dock = DockStyle.Bottom;
             panel9.Location = new Point(0, 117);
             panel9.Name = "panel9";
-            panel9.Size = new Size(1005, 2);
+            panel9.Size = new Size(1074, 2);
             panel9.TabIndex = 4;
             // 
             // panel2
             // 
             panel2.Controls.Add(tableLayoutPanel30);
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 601);
+            panel2.Location = new Point(0, 649);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1264, 80);
+            panel2.Size = new Size(1350, 80);
             panel2.TabIndex = 24;
             // 
             // tableLayoutPanel30
@@ -662,7 +662,7 @@
             tableLayoutPanel30.RowCount = 1;
             tableLayoutPanel30.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel30.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel30.Size = new Size(1264, 80);
+            tableLayoutPanel30.Size = new Size(1350, 80);
             tableLayoutPanel30.TabIndex = 0;
             // 
             // calculateButton
@@ -672,7 +672,7 @@
             calculateButton.FillPressColor = Color.FromArgb(45, 108, 38);
             calculateButton.FillSelectedColor = Color.FromArgb(45, 108, 38);
             calculateButton.Font = new Font("Microsoft Sans Serif", 12F);
-            calculateButton.Location = new Point(1015, 3);
+            calculateButton.Location = new Point(1101, 3);
             calculateButton.MinimumSize = new Size(1, 1);
             calculateButton.Name = "calculateButton";
             calculateButton.RectColor = Color.FromArgb(57, 131, 48);
@@ -694,7 +694,7 @@
             uiButton1.FillSelectedColor = Color.FromArgb(45, 108, 38);
             uiButton1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             uiButton1.ForeColor = Color.FromArgb(57, 131, 48);
-            uiButton1.Location = new Point(886, 3);
+            uiButton1.Location = new Point(972, 3);
             uiButton1.MinimumSize = new Size(1, 1);
             uiButton1.Name = "uiButton1";
             uiButton1.RectColor = Color.White;
@@ -713,7 +713,7 @@
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(0, 125);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1264, 476);
+            panel3.Size = new Size(1350, 524);
             panel3.TabIndex = 25;
             // 
             // tableLayoutPanel1
@@ -729,7 +729,7 @@
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Size = new Size(1264, 476);
+            tableLayoutPanel1.Size = new Size(1350, 524);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // panel4
@@ -739,7 +739,7 @@
             panel4.Dock = DockStyle.Fill;
             panel4.Location = new Point(3, 3);
             panel4.Name = "panel4";
-            panel4.Size = new Size(645, 470);
+            panel4.Size = new Size(689, 518);
             panel4.TabIndex = 0;
             // 
             // label1
@@ -777,7 +777,7 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 70F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 70F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 70F));
-            tableLayoutPanel2.Size = new Size(510, 350);
+            tableLayoutPanel2.Size = new Size(554, 350);
             tableLayoutPanel2.TabIndex = 0;
             tableLayoutPanel2.Paint += tableLayoutPanel2_Paint;
             // 
@@ -789,12 +789,12 @@
             tableLayoutPanel13.Controls.Add(LabelVidrio, 1, 0);
             tableLayoutPanel13.Controls.Add(input4, 0, 0);
             tableLayoutPanel13.Dock = DockStyle.Fill;
-            tableLayoutPanel13.Location = new Point(258, 213);
+            tableLayoutPanel13.Location = new Point(280, 213);
             tableLayoutPanel13.Name = "tableLayoutPanel13";
             tableLayoutPanel13.RowCount = 1;
             tableLayoutPanel13.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel13.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel13.Size = new Size(249, 64);
+            tableLayoutPanel13.Size = new Size(271, 64);
             tableLayoutPanel13.TabIndex = 31;
             // 
             // LabelVidrio
@@ -802,7 +802,7 @@
             LabelVidrio.Anchor = AnchorStyles.Left;
             LabelVidrio.Font = new Font("Microsoft Sans Serif", 10F);
             LabelVidrio.ForeColor = Color.FromArgb(48, 48, 48);
-            LabelVidrio.Location = new Point(170, 19);
+            LabelVidrio.Location = new Point(185, 19);
             LabelVidrio.Name = "LabelVidrio";
             LabelVidrio.Size = new Size(74, 26);
             LabelVidrio.TabIndex = 21;
@@ -816,12 +816,12 @@
             tableLayoutPanel12.Controls.Add(LabelAluminio, 1, 0);
             tableLayoutPanel12.Controls.Add(input3, 0, 0);
             tableLayoutPanel12.Dock = DockStyle.Fill;
-            tableLayoutPanel12.Location = new Point(258, 143);
+            tableLayoutPanel12.Location = new Point(280, 143);
             tableLayoutPanel12.Name = "tableLayoutPanel12";
             tableLayoutPanel12.RowCount = 1;
             tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel12.Size = new Size(249, 64);
+            tableLayoutPanel12.Size = new Size(271, 64);
             tableLayoutPanel12.TabIndex = 30;
             // 
             // LabelAluminio
@@ -829,7 +829,7 @@
             LabelAluminio.Anchor = AnchorStyles.Left;
             LabelAluminio.Font = new Font("Microsoft Sans Serif", 10F);
             LabelAluminio.ForeColor = Color.FromArgb(48, 48, 48);
-            LabelAluminio.Location = new Point(170, 19);
+            LabelAluminio.Location = new Point(185, 19);
             LabelAluminio.Name = "LabelAluminio";
             LabelAluminio.Size = new Size(74, 26);
             LabelAluminio.TabIndex = 21;
@@ -843,12 +843,12 @@
             tableLayoutPanel11.Controls.Add(LabelPlastico, 1, 0);
             tableLayoutPanel11.Controls.Add(input2, 0, 0);
             tableLayoutPanel11.Dock = DockStyle.Fill;
-            tableLayoutPanel11.Location = new Point(258, 73);
+            tableLayoutPanel11.Location = new Point(280, 73);
             tableLayoutPanel11.Name = "tableLayoutPanel11";
             tableLayoutPanel11.RowCount = 1;
             tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel11.Size = new Size(249, 64);
+            tableLayoutPanel11.Size = new Size(271, 64);
             tableLayoutPanel11.TabIndex = 29;
             // 
             // LabelPlastico
@@ -856,7 +856,7 @@
             LabelPlastico.Anchor = AnchorStyles.Left;
             LabelPlastico.Font = new Font("Microsoft Sans Serif", 10F);
             LabelPlastico.ForeColor = Color.FromArgb(48, 48, 48);
-            LabelPlastico.Location = new Point(170, 19);
+            LabelPlastico.Location = new Point(185, 19);
             LabelPlastico.Name = "LabelPlastico";
             LabelPlastico.Size = new Size(74, 26);
             LabelPlastico.TabIndex = 21;
@@ -870,12 +870,12 @@
             tableLayoutPanel10.Controls.Add(LabelPapel, 1, 0);
             tableLayoutPanel10.Controls.Add(input1, 0, 0);
             tableLayoutPanel10.Dock = DockStyle.Fill;
-            tableLayoutPanel10.Location = new Point(258, 3);
+            tableLayoutPanel10.Location = new Point(280, 3);
             tableLayoutPanel10.Name = "tableLayoutPanel10";
             tableLayoutPanel10.RowCount = 1;
             tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel10.Size = new Size(249, 64);
+            tableLayoutPanel10.Size = new Size(271, 64);
             tableLayoutPanel10.TabIndex = 28;
             // 
             // LabelPapel
@@ -883,7 +883,7 @@
             LabelPapel.Anchor = AnchorStyles.Left;
             LabelPapel.Font = new Font("Microsoft Sans Serif", 10F);
             LabelPapel.ForeColor = Color.FromArgb(48, 48, 48);
-            LabelPapel.Location = new Point(170, 19);
+            LabelPapel.Location = new Point(185, 19);
             LabelPapel.Name = "LabelPapel";
             LabelPapel.Size = new Size(74, 26);
             LabelPapel.TabIndex = 21;
@@ -902,7 +902,7 @@
             tableLayoutPanel8.RowCount = 1;
             tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel8.Size = new Size(249, 64);
+            tableLayoutPanel8.Size = new Size(271, 64);
             tableLayoutPanel8.TabIndex = 26;
             // 
             // pictureBox5
@@ -921,7 +921,7 @@
             uiLabel5.Anchor = AnchorStyles.Left;
             uiLabel5.Font = new Font("Microsoft Sans Serif", 10F);
             uiLabel5.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel5.Location = new Point(49, 19);
+            uiLabel5.Location = new Point(54, 19);
             uiLabel5.Name = "uiLabel5";
             uiLabel5.Size = new Size(97, 26);
             uiLabel5.TabIndex = 19;
@@ -940,7 +940,7 @@
             tableLayoutPanel7.RowCount = 1;
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel7.Size = new Size(249, 64);
+            tableLayoutPanel7.Size = new Size(271, 64);
             tableLayoutPanel7.TabIndex = 25;
             // 
             // pictureBox4
@@ -959,7 +959,7 @@
             uiLabel4.Anchor = AnchorStyles.Left;
             uiLabel4.Font = new Font("Microsoft Sans Serif", 10F);
             uiLabel4.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel4.Location = new Point(48, 20);
+            uiLabel4.Location = new Point(52, 20);
             uiLabel4.Name = "uiLabel4";
             uiLabel4.Size = new Size(53, 23);
             uiLabel4.TabIndex = 18;
@@ -978,7 +978,7 @@
             tableLayoutPanel6.RowCount = 1;
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel6.Size = new Size(249, 64);
+            tableLayoutPanel6.Size = new Size(271, 64);
             tableLayoutPanel6.TabIndex = 24;
             // 
             // pictureBox3
@@ -997,7 +997,7 @@
             uiLabel3.Anchor = AnchorStyles.Left;
             uiLabel3.Font = new Font("Microsoft Sans Serif", 10F);
             uiLabel3.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel3.Location = new Point(49, 20);
+            uiLabel3.Location = new Point(54, 20);
             uiLabel3.Name = "uiLabel3";
             uiLabel3.Size = new Size(74, 23);
             uiLabel3.TabIndex = 17;
@@ -1016,7 +1016,7 @@
             tableLayoutPanel5.RowCount = 1;
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel5.Size = new Size(249, 64);
+            tableLayoutPanel5.Size = new Size(271, 64);
             tableLayoutPanel5.TabIndex = 23;
             // 
             // pictureBox2
@@ -1035,7 +1035,7 @@
             uiLabel2.Anchor = AnchorStyles.Left;
             uiLabel2.Font = new Font("Microsoft Sans Serif", 10F);
             uiLabel2.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel2.Location = new Point(49, 20);
+            uiLabel2.Location = new Point(54, 20);
             uiLabel2.Name = "uiLabel2";
             uiLabel2.Size = new Size(64, 23);
             uiLabel2.TabIndex = 16;
@@ -1054,7 +1054,7 @@
             tableLayoutPanel4.RowCount = 1;
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel4.Size = new Size(249, 64);
+            tableLayoutPanel4.Size = new Size(271, 64);
             tableLayoutPanel4.TabIndex = 22;
             // 
             // pictureBox1
@@ -1076,12 +1076,12 @@
             tableLayoutPanel9.Controls.Add(LabelElectronicos, 1, 0);
             tableLayoutPanel9.Controls.Add(input5, 0, 0);
             tableLayoutPanel9.Dock = DockStyle.Fill;
-            tableLayoutPanel9.Location = new Point(258, 283);
+            tableLayoutPanel9.Location = new Point(280, 283);
             tableLayoutPanel9.Name = "tableLayoutPanel9";
             tableLayoutPanel9.RowCount = 1;
             tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel9.Size = new Size(249, 64);
+            tableLayoutPanel9.Size = new Size(271, 64);
             tableLayoutPanel9.TabIndex = 27;
             // 
             // LabelElectronicos
@@ -1089,7 +1089,7 @@
             LabelElectronicos.Anchor = AnchorStyles.Left;
             LabelElectronicos.Font = new Font("Microsoft Sans Serif", 10F);
             LabelElectronicos.ForeColor = Color.FromArgb(48, 48, 48);
-            LabelElectronicos.Location = new Point(170, 19);
+            LabelElectronicos.Location = new Point(185, 19);
             LabelElectronicos.Name = "LabelElectronicos";
             LabelElectronicos.Size = new Size(74, 26);
             LabelElectronicos.TabIndex = 21;
@@ -1100,9 +1100,9 @@
             panel5.Controls.Add(label2);
             panel5.Controls.Add(tableLayoutPanel3);
             panel5.Dock = DockStyle.Fill;
-            panel5.Location = new Point(654, 3);
+            panel5.Location = new Point(698, 3);
             panel5.Name = "panel5";
-            panel5.Size = new Size(607, 470);
+            panel5.Size = new Size(649, 518);
             panel5.TabIndex = 1;
             // 
             // label2
@@ -1535,10 +1535,12 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1264, 681);
+            ClientSize = new Size(1350, 729);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "Calculadora";
             Text = "PantallaCalculadora";
             panel1.ResumeLayout(false);

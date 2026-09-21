@@ -142,7 +142,7 @@ namespace CalculadoraAmbienta.PantallaReportes
             uiCheckBoxGroup1.Padding = new Padding(0, 32, 0, 0);
             uiCheckBoxGroup1.RectColor = Color.White;
             uiCheckBoxGroup1.SelectedIndexes = (List<int>)resources.GetObject("uiCheckBoxGroup1.SelectedIndexes");
-            uiCheckBoxGroup1.Size = new Size(187, 410);
+            uiCheckBoxGroup1.Size = new Size(187, 1000);
             uiCheckBoxGroup1.TabIndex = 0;
             uiCheckBoxGroup1.Text = "Años";
             uiCheckBoxGroup1.TextAlignment = ContentAlignment.MiddleLeft;
@@ -150,7 +150,7 @@ namespace CalculadoraAmbienta.PantallaReportes
             // 
             // Submit
             // 
-            Submit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            Submit.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             Submit.FillColor = Color.FromArgb(57, 131, 48);
             Submit.FillHoverColor = Color.FromArgb(72, 150, 62);
             Submit.FillPressColor = Color.FromArgb(45, 108, 38);
@@ -197,7 +197,7 @@ namespace CalculadoraAmbienta.PantallaReportes
             uiDataGridView1.EnableHeadersVisualStyles = false;
             uiDataGridView1.Font = new Font("Microsoft Sans Serif", 12F);
             uiDataGridView1.GridColor = Color.FromArgb(57, 131, 48);
-            uiDataGridView1.Location = new Point(12, 22);
+            uiDataGridView1.Location = new Point(45, 46);
             uiDataGridView1.Name = "uiDataGridView1";
             uiDataGridView1.RectColor = Color.FromArgb(57, 131, 48);
             uiDataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
@@ -230,7 +230,7 @@ namespace CalculadoraAmbienta.PantallaReportes
             downloadExcel.FillPressColor = Color.FromArgb(45, 108, 38);
             downloadExcel.FillSelectedColor = Color.FromArgb(45, 108, 38);
             downloadExcel.Font = new Font("Microsoft Sans Serif", 12F);
-            downloadExcel.Location = new Point(895, 77);
+            downloadExcel.Location = new Point(964, 77);
             downloadExcel.MinimumSize = new Size(1, 1);
             downloadExcel.Name = "downloadExcel";
             downloadExcel.RectColor = Color.FromArgb(57, 131, 48);
@@ -249,7 +249,7 @@ namespace CalculadoraAmbienta.PantallaReportes
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 125);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1264, 518);
+            panel2.Size = new Size(1350, 566);
             panel2.TabIndex = 5;
             // 
             // tableLayoutPanel2
@@ -265,19 +265,19 @@ namespace CalculadoraAmbienta.PantallaReportes
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 91.89189F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 8.10810852F));
-            tableLayoutPanel2.Size = new Size(1264, 518);
+            tableLayoutPanel2.Size = new Size(1350, 566);
             tableLayoutPanel2.TabIndex = 3;
             tableLayoutPanel2.Paint += tableLayoutPanel2_Paint;
             // 
             // tableLayoutPanel3
             // 
+            tableLayoutPanel3.Anchor = AnchorStyles.Right;
             tableLayoutPanel3.ColumnCount = 1;
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel3.Controls.Add(Submit, 0, 1);
             tableLayoutPanel3.Controls.Add(uiGroupBox1, 0, 0);
-            tableLayoutPanel3.Dock = DockStyle.Fill;
-            tableLayoutPanel3.Location = new Point(3, 3);
+            tableLayoutPanel3.Location = new Point(23, 27);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 2;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 91.99219F));
@@ -290,9 +290,9 @@ namespace CalculadoraAmbienta.PantallaReportes
             panel5.Controls.Add(panel10);
             panel5.Controls.Add(panel12);
             panel5.Dock = DockStyle.Fill;
-            panel5.Location = new Point(306, 3);
+            panel5.Location = new Point(326, 3);
             panel5.Name = "panel5";
-            panel5.Size = new Size(955, 512);
+            panel5.Size = new Size(1021, 560);
             panel5.TabIndex = 5;
             // 
             // panel10
@@ -300,7 +300,7 @@ namespace CalculadoraAmbienta.PantallaReportes
             panel10.Dock = DockStyle.Top;
             panel10.Location = new Point(0, 0);
             panel10.Name = "panel10";
-            panel10.Size = new Size(955, 16);
+            panel10.Size = new Size(1021, 16);
             panel10.TabIndex = 0;
             // 
             // panel12
@@ -309,7 +309,7 @@ namespace CalculadoraAmbienta.PantallaReportes
             panel12.Dock = DockStyle.Fill;
             panel12.Location = new Point(0, 0);
             panel12.Name = "panel12";
-            panel12.Size = new Size(955, 512);
+            panel12.Size = new Size(1021, 560);
             panel12.TabIndex = 2;
             // 
             // panel6
@@ -318,7 +318,7 @@ namespace CalculadoraAmbienta.PantallaReportes
             panel6.Dock = DockStyle.Top;
             panel6.Location = new Point(0, 0);
             panel6.Name = "panel6";
-            panel6.Size = new Size(1264, 125);
+            panel6.Size = new Size(1350, 125);
             panel6.TabIndex = 7;
             // 
             // tableLayoutPanel1
@@ -334,7 +334,7 @@ namespace CalculadoraAmbienta.PantallaReportes
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Size = new Size(1264, 125);
+            tableLayoutPanel1.Size = new Size(1350, 125);
             tableLayoutPanel1.TabIndex = 1;
             // 
             // panel8
@@ -343,9 +343,9 @@ namespace CalculadoraAmbienta.PantallaReportes
             panel8.Controls.Add(downloadExcel);
             panel8.Controls.Add(panel9);
             panel8.Dock = DockStyle.Fill;
-            panel8.Location = new Point(127, 3);
+            panel8.Location = new Point(135, 3);
             panel8.Name = "panel8";
-            panel8.Size = new Size(1007, 119);
+            panel8.Size = new Size(1076, 119);
             panel8.TabIndex = 4;
             // 
             // tableLayoutPanel5
@@ -412,26 +412,28 @@ namespace CalculadoraAmbienta.PantallaReportes
             panel9.Dock = DockStyle.Bottom;
             panel9.Location = new Point(0, 117);
             panel9.Name = "panel9";
-            panel9.Size = new Size(1007, 2);
+            panel9.Size = new Size(1076, 2);
             panel9.TabIndex = 4;
             // 
             // panel4
             // 
             panel4.BackColor = Color.White;
             panel4.Dock = DockStyle.Bottom;
-            panel4.Location = new Point(0, 643);
+            panel4.Location = new Point(0, 691);
             panel4.Name = "panel4";
-            panel4.Size = new Size(1264, 38);
+            panel4.Size = new Size(1350, 38);
             panel4.TabIndex = 8;
             // 
             // Reportes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1264, 681);
+            ClientSize = new Size(1350, 729);
             Controls.Add(panel2);
             Controls.Add(panel6);
             Controls.Add(panel4);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "Reportes";
             Text = "PantallaReportes";
             Load += Reportes_Load;

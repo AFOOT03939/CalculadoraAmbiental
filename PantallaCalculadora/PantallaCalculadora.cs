@@ -20,7 +20,7 @@ namespace CalculadoraAmbienta.PantallaCalculadora
         {
             InitializeComponent();
             _service = service;
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
         }
 
         //son los inputs

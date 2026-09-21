@@ -21,7 +21,7 @@ namespace CalculadoraAmbienta.PantallaReportes
             InitializeComponent();
             _service = service;
             _excelService = excelService;
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)

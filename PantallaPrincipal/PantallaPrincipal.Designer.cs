@@ -93,7 +93,7 @@
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 125);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1264, 476);
+            panel2.Size = new Size(1350, 524);
             panel2.TabIndex = 5;
             // 
             // tableLayoutPanel2
@@ -109,7 +109,7 @@
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.Size = new Size(1264, 476);
+            tableLayoutPanel2.Size = new Size(1350, 524);
             tableLayoutPanel2.TabIndex = 1;
             tableLayoutPanel2.Paint += tableLayoutPanel2_Paint_1;
             // 
@@ -117,7 +117,7 @@
             // 
             panel4.Anchor = AnchorStyles.Right;
             panel4.Controls.Add(tableLayoutPanel4);
-            panel4.Location = new Point(372, 88);
+            panel4.Location = new Point(415, 112);
             panel4.Margin = new Padding(10);
             panel4.Name = "panel4";
             panel4.Size = new Size(250, 300);
@@ -205,7 +205,7 @@
             // 
             panel5.Anchor = AnchorStyles.Left;
             panel5.Controls.Add(tableLayoutPanel3);
-            panel5.Location = new Point(642, 88);
+            panel5.Location = new Point(685, 112);
             panel5.Margin = new Padding(10);
             panel5.Name = "panel5";
             panel5.Size = new Size(250, 300);
@@ -292,9 +292,9 @@
             // 
             panel3.Controls.Add(tableLayoutPanel6);
             panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(0, 601);
+            panel3.Location = new Point(0, 649);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1264, 80);
+            panel3.Size = new Size(1350, 80);
             panel3.TabIndex = 0;
             // 
             // tableLayoutPanel6
@@ -305,7 +305,7 @@
             tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 80F));
             tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
             tableLayoutPanel6.Controls.Add(panel10, 1, 0);
-            tableLayoutPanel6.Location = new Point(0, 0);
+            tableLayoutPanel6.Location = new Point(43, 0);
             tableLayoutPanel6.Name = "tableLayoutPanel6";
             tableLayoutPanel6.RowCount = 1;
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -379,7 +379,7 @@
             panel6.Dock = DockStyle.Top;
             panel6.Location = new Point(0, 0);
             panel6.Name = "panel6";
-            panel6.Size = new Size(1264, 125);
+            panel6.Size = new Size(1350, 125);
             panel6.TabIndex = 6;
             // 
             // tableLayoutPanel1
@@ -395,7 +395,7 @@
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Size = new Size(1264, 125);
+            tableLayoutPanel1.Size = new Size(1350, 125);
             tableLayoutPanel1.TabIndex = 1;
             tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
             // 
@@ -405,9 +405,9 @@
             panel8.Controls.Add(tableLayoutPanel5);
             panel8.Controls.Add(panel9);
             panel8.Dock = DockStyle.Fill;
-            panel8.Location = new Point(129, 3);
+            panel8.Location = new Point(138, 3);
             panel8.Name = "panel8";
-            panel8.Size = new Size(1005, 119);
+            panel8.Size = new Size(1074, 119);
             panel8.TabIndex = 4;
             // 
             // label11
@@ -487,7 +487,7 @@
             panel9.Dock = DockStyle.Bottom;
             panel9.Location = new Point(0, 117);
             panel9.Name = "panel9";
-            panel9.Size = new Size(1005, 2);
+            panel9.Size = new Size(1074, 2);
             panel9.TabIndex = 4;
             // 
             // panel1
@@ -502,12 +502,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1264, 681);
+            ClientSize = new Size(1350, 729);
             Controls.Add(panel2);
             Controls.Add(panel6);
             Controls.Add(label2);
             Controls.Add(panel3);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "PantallaPrincipal";
             Text = "PantallaPrincipal";
             Load += PantallaPrincipal_Load;
