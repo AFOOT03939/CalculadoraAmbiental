@@ -41,7 +41,6 @@
             panel6 = new Panel();
             tableLayoutPanel1 = new TableLayoutPanel();
             panel8 = new Panel();
-            label11 = new Label();
             tableLayoutPanel5 = new TableLayoutPanel();
             pictureBox3 = new PictureBox();
             panel7 = new Panel();
@@ -401,7 +400,6 @@
             // 
             // panel8
             // 
-            panel8.Controls.Add(label11);
             panel8.Controls.Add(tableLayoutPanel5);
             panel8.Controls.Add(panel9);
             panel8.Dock = DockStyle.Fill;
@@ -409,18 +407,6 @@
             panel8.Name = "panel8";
             panel8.Size = new Size(1074, 119);
             panel8.TabIndex = 4;
-            // 
-            // label11
-            // 
-            label11.Anchor = AnchorStyles.Left;
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
-            label11.ForeColor = Color.FromArgb(57, 131, 48);
-            label11.Location = new Point(730, 90);
-            label11.Name = "label11";
-            label11.Size = new Size(308, 13);
-            label11.TabIndex = 7;
-            label11.Text = "Subdirección de Igualdad, Inclusión y Derechos Humanos.";
             // 
             // tableLayoutPanel5
             // 
@@ -532,7 +518,6 @@
             panel6.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
             panel8.ResumeLayout(false);
-            panel8.PerformLayout();
             tableLayoutPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel7.ResumeLayout(false);
@@ -574,6 +559,5 @@
         private Panel panel11;
         private TableLayoutPanel tableLayoutPanel7;
         private PictureBox pictureBox4;
-        private Label label11;
     }
 }
