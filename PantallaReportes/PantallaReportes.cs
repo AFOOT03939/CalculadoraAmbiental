@@ -54,6 +54,7 @@ namespace CalculadoraAmbienta.PantallaReportes
             uiDataGridView1.AddColumn("Mes", "mes", 55);
 
             uiDataGridView1.AddColumn("Papel", "papel", 70);
+            uiDataGridView1.AddColumn("Cartón", "carton", 70);
             uiDataGridView1.AddColumn("Plástico", "plastico", 75);
             uiDataGridView1.AddColumn("Aluminio", "aluminio", 75);
             uiDataGridView1.AddColumn("Vidrio", "vidrio", 70);
@@ -154,6 +155,7 @@ namespace CalculadoraAmbienta.PantallaReportes
                     Anio = reporte.Fecha?.Substring(0, 4),
                     Mes = mes[0],
                     Papel = reporte.Papel,
+                    Carton = reporte.Carton,
                     Plastico = reporte.Plastico,
                     Aluminio = reporte.Aluminio,
                     Vidrio = reporte.Vidrio,
@@ -196,6 +198,7 @@ namespace CalculadoraAmbienta.PantallaReportes
                     listaReporte.Anio,
                     listaReporte.Mes,
                     listaReporte.Papel,
+                    listaReporte.Carton,
                     listaReporte.Plastico,
                     listaReporte.Aluminio,
                     listaReporte.Vidrio,
@@ -212,6 +215,7 @@ namespace CalculadoraAmbienta.PantallaReportes
 
             // Sumatorias
             double totalPapel = listaReportesTabla.Sum(x => x.Papel);
+            double totalCarton = listaReportesTabla.Sum(x => x.Carton);
             double totalPlastico = listaReportesTabla.Sum(x => x.Plastico);
             double totalAluminio = listaReportesTabla.Sum(x => x.Aluminio);
             double totalVidrio = listaReportesTabla.Sum(x => x.Vidrio);
@@ -225,12 +229,13 @@ namespace CalculadoraAmbienta.PantallaReportes
             double totalPetroleo = listaReportesTabla.Sum(x => x.Petroleo);
             double totalBauxita = listaReportesTabla.Sum(x => x.Bauxita);
 
-            // Agregamos la fila TOTAL
+            // Agregamos la fila total
             uiDataGridView1.AddRow(
                 "",
                 "",
                 "TOTAL",
                 totalPapel,
+                totalCarton,
                 totalPlastico,
                 totalAluminio,
                 totalVidrio,

@@ -30,6 +30,15 @@ namespace CalculadoraAmbienta.Servicios
             var papelPetroleo = reporte.Papel * FactoresAmbientales.papelPetroleo;
             var papelBauxita = reporte.Papel * FactoresAmbientales.papelBauxita;
 
+            // Carton (toma las variables de papel porque son lo mismo realmente)
+            var cartonArboles = reporte.Carton * FactoresAmbientales.papelArboles;
+            var cartonAgua = reporte.Carton * FactoresAmbientales.papelAgua;
+            var cartonEnergia = reporte.Carton * FactoresAmbientales.papelEnergia;
+            var cartonRellenoSanitario = reporte.Carton * FactoresAmbientales.papelRellenoSanitario;
+            var cartonCo2 = reporte.Carton * FactoresAmbientales.papelCo2;
+            var cartonPetroleo = reporte.Carton * FactoresAmbientales.papelPetroleo;
+            var cartonBauxita = reporte.Carton * FactoresAmbientales.papelBauxita;
+
             // Plástico
             var plasticoArboles = reporte.Plastico * FactoresAmbientales.plasticoArboles;
             var plasticoAgua = reporte.Plastico * FactoresAmbientales.plasticoAgua;
@@ -67,13 +76,13 @@ namespace CalculadoraAmbienta.Servicios
             var electronicosBauxita = reporte.Electronica * FactoresAmbientales.electronicosBauxita;
 
             // Calcula la sumatoria de los resultados de todos los inputs por sus constantes
-            var sumatoriaArboles = papelArboles + plasticoArboles + aluminioArboles + vidrioArboles + electronicosArboles;
-            var sumatoriaAgua = papelAgua + plasticoAgua + aluminioAgua + vidrioAgua + electronicosAgua;
-            var sumatoriaEnergia = papelEnergia + plasticoEnergia + aluminioEnergia + vidrioEnergia + electronicosEnergia;
-            var sumatoriaRellenoSanitario = papelRellenoSanitario + plasticoRellenoSanitario + aluminioRellenoSanitario + vidrioRellenoSanitario + electronicosRellenoSanitario;
-            var sumatoriaCo2 = papelCo2 + plasticoCo2 + aluminioCo2 + vidrioCo2 + electronicosCo2;
-            var sumatoriaPetroleo = papelPetroleo + plasticoPetroleo + aluminioPetroleo + vidrioPetroleo + electronicosPetroleo;
-            var sumatoriaBauxita = papelBauxita + plasticoBauxita + aluminioBauxita + vidrioBauxita + electronicosBauxita;
+            var sumatoriaArboles = papelArboles + plasticoArboles + aluminioArboles + vidrioArboles + electronicosArboles + cartonArboles;
+            var sumatoriaAgua = papelAgua + plasticoAgua + aluminioAgua + vidrioAgua + electronicosAgua + cartonAgua;
+            var sumatoriaEnergia = papelEnergia + plasticoEnergia + aluminioEnergia + vidrioEnergia + electronicosEnergia + cartonEnergia;
+            var sumatoriaRellenoSanitario = papelRellenoSanitario + plasticoRellenoSanitario + aluminioRellenoSanitario + vidrioRellenoSanitario + electronicosRellenoSanitario + cartonRellenoSanitario;
+            var sumatoriaCo2 = papelCo2 + plasticoCo2 + aluminioCo2 + vidrioCo2 + electronicosCo2 + cartonCo2;
+            var sumatoriaPetroleo = papelPetroleo + plasticoPetroleo + aluminioPetroleo + vidrioPetroleo + electronicosPetroleo + cartonPetroleo;
+            var sumatoriaBauxita = papelBauxita + plasticoBauxita + aluminioBauxita + vidrioBauxita + electronicosBauxita + cartonBauxita;
 
             // Objeto de resultados (es lo que irá al forms al terminar)
             var resultados = new Resultados{

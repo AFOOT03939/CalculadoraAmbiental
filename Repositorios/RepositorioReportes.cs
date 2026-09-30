@@ -24,8 +24,8 @@ namespace CalculadoraAmbienta.Repositorios
             using var conexion = _conexion.CreateConnection();
 
             var sql = @"
-                INSERT INTO Reportes(fecha, papel, plastico, aluminio, vidrio, electronica)
-                VALUES(@Fecha, @Papel, @Plastico, @Aluminio, @Vidrio, @Electronica);
+                INSERT INTO Reportes(fecha, papel, plastico, aluminio, vidrio, electronica, carton)
+                VALUES(@Fecha, @Papel, @Plastico, @Aluminio, @Vidrio, @Electronica, @Carton);
 
             ";
 
@@ -34,6 +34,7 @@ namespace CalculadoraAmbienta.Repositorios
                 // Inserta la fecha de hoy
                 Fecha = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
                 Papel = reporte.Papel,
+                Carton = reporte.Carton,
                 Plastico = reporte.Plastico,
                 Aluminio = reporte.Aluminio,
                 Vidrio = reporte.Vidrio,
@@ -77,6 +78,7 @@ namespace CalculadoraAmbienta.Repositorios
                     ID_REPORTE,
                     FECHA,
                     PAPEL,
+                    CARTON,
                     PLASTICO,
                     ALUMINIO,
                     VIDRIO,

@@ -9,6 +9,7 @@ namespace CalculadoraAmbienta.Modelos
         public int Id_Reporte { get; set; }
         public string? Fecha { get; set; }
         public double Papel { get; set; }
+        public double Carton { get; set; }
         public double Plastico { get; set; }
         public double Aluminio { get; set; }
         public double Vidrio { get; set; }

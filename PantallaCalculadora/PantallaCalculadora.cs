@@ -53,6 +53,7 @@ namespace CalculadoraAmbienta.PantallaCalculadora
         private void uiButton1_Click(object sender, EventArgs e)
         {
             string papel = input1.Text;
+            string carton = input6.Text;
             string plastico = input2.Text;
             string aluminio = input3.Text;
             string vidrio = input4.Text;
@@ -62,6 +63,7 @@ namespace CalculadoraAmbienta.PantallaCalculadora
             var objetoInputs = new Reporte
             {
                 Papel = double.Parse(papel),
+                Carton = double.Parse(carton),
                 Plastico = double.Parse(plastico),
                 Aluminio = double.Parse(aluminio),
                 Vidrio = double.Parse(vidrio),
@@ -93,6 +95,7 @@ namespace CalculadoraAmbienta.PantallaCalculadora
         private void uiButton1_Click_1(object sender, EventArgs e)
         {
             string papel = input1.Text;
+            string carton = input6.Text;
             string plastico = input2.Text;
             string aluminio = input3.Text;
             string vidrio = input4.Text;
@@ -102,6 +105,7 @@ namespace CalculadoraAmbienta.PantallaCalculadora
             var objetoInputs = new Reporte
             {
                 Papel = double.Parse(papel),
+                Carton = double.Parse(carton),
                 Plastico = double.Parse(plastico),
                 Aluminio = double.Parse(aluminio),
                 Vidrio = double.Parse(vidrio),
@@ -148,6 +152,7 @@ namespace CalculadoraAmbienta.PantallaCalculadora
             input3.Text = "0";
             input4.Text = "0";
             input5.Text = "0";
+            input6.Text = "0";
 
             output1.Text = "";
             output2.Text = "";

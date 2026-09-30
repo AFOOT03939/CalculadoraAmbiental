@@ -10,6 +10,7 @@ namespace CalculadoraAmbienta.Modelos
         public string? Anio { get; set; }
         public string? Mes { get; set; }
         public double Papel { get; set; }
+        public double Carton { get; set; }
         public double Plastico { get; set; }
         public double Aluminio { get; set; }
         public double Vidrio { get; set; }
